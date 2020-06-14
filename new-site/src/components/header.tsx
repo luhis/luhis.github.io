@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, {FunctionComponent} from "react"
 
-const Header = ({ siteTitle }) => (
+const Header: FunctionComponent<{siteTitle: string}> = ({ siteTitle }) => (
   <header
     style={{
       background: `rebeccapurple`,
