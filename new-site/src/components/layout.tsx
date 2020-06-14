@@ -7,10 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import {Container} from "rbx"
 
-import Header from "./header"
 import "rbx/index.css";
 
 const Layout = ({ children }) => {
