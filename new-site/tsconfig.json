@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "es2016",
+    "moduleResolution": "node", 
+    "jsx": "preserve",
+    "sourceMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "noUnusedLocals": true,                /* Report errors on unused locals. */
+    "noUnusedParameters": true,            /* Report errors on unused parameters. */
+    "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
+    "noFallthroughCasesInSwitch": true    /* Report errors for fallthrough cases in switch statement. */
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}

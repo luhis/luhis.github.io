@@ -6,12 +6,11 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import {Container} from "rbx"
 
 import "rbx/index.css";
 
-const Layout = ({ children }) => {
+const Layout: React.FC<{children: readonly JSX.Element[]}> = ({ children }) => {
   return (
     <Container fluid>
         <main>{children}</main>
@@ -22,10 +21,6 @@ const Layout = ({ children }) => {
         </footer>
     </Container>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

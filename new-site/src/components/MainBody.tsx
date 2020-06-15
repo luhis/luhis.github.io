@@ -1,5 +1,5 @@
 import React from "react"
-import { Hero, Title, Container, Menu, Content, Box, Media } from "rbx"
+import { Hero, Title, Container, Box, Media } from "rbx"
 
 const MainBody: React.FC = () => {
   return (<Hero size="fullheight">

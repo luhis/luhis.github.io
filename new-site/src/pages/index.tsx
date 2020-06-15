@@ -5,8 +5,8 @@ import { FaHome, FaEnvelopeOpen, FaPhone, FaGithub, FaLinkedin } from 'react-ico
 import { Column, Hero, Image, Title, Container, Menu } from "rbx"
 import Img from "gatsby-image"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 import MainBody from "../components/MainBody";
 
 const UsingTypescript: React.FC = () => {

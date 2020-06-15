@@ -20,6 +20,7 @@
     "preact-render-to-string": "^5.1.9",
     "prop-types": "^15.7.2",
     "rbx": "^2.2.0",
+    "react": "^16.13.1",
     "react-helmet": "^6.0.0",
     "react-icons": "^3.10.0"
   },
@@ -38,7 +39,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "type-check": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
