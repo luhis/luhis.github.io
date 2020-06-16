@@ -1,7 +1,7 @@
 // If you don't want to use TypeScript you can delete this file!
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { FaHome, FaEnvelopeOpen, FaPhone, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaHome, FaEnvelopeOpen, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa"
 import { Column, Hero, Image, Title, Container, Menu } from "rbx"
 import Img from "gatsby-image"
 
