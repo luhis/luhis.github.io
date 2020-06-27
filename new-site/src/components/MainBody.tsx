@@ -27,8 +27,26 @@ const MainBody: React.FC = () => {
           <Media>
             <Media.Item>
               <p>
-                <strong>Creative Technologies</strong> <small>(Developer)</small> <small>Dec 2016 - present</small>
-                <br /> Working in an Agile team in a SAFe architecture I am currently developing solutions for a financial services company. I have just completed a project where I created a completely immutable ReactJS front end that connects to a .Net Core API I wrote to allow clients to download documents from our system.
+                <strong>Mindshare (WPP)</strong> <small>(Developer)</small> <small>December 2019 - June 2020</small>
+                <br />Produced internal tools for use in the media industry.</p>
+            </Media.Item>
+          </Media>
+        </Box>
+        <Box>
+          <Media>
+            <Media.Item>
+              <p>
+                <strong>IQVIA</strong> <small>(Developer)</small> <small>June 2019 - December 2019</small>
+                <br />Worked for a medical data processing company to product querying and reporting tools.</p>
+            </Media.Item>
+          </Media>
+        </Box>
+        <Box>
+          <Media>
+            <Media.Item>
+              <p>
+                <strong>Creative Technologies (Schroders)</strong> <small>(Developer)</small> <small>Dec 2016 - June 2019</small>
+                <br /> Working in an Agile team in a SAFe architecture I developed solutions for a financial services company. I have just completed a project where I created a completely immutable ReactJS front end that connects to a .Net Core API I wrote to allow clients to download documents from our system.
                                           </p>
             </Media.Item>
           </Media>
