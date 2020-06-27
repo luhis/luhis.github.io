@@ -4,10 +4,13 @@ import { graphql, useStaticQuery } from "gatsby"
 import { FaHome, FaEnvelopeOpen, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa"
 import { Column, Hero, Image, Title, Container, Menu } from "rbx"
 import Img from "gatsby-image"
+import ReactGA from 'react-ga'
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import MainBody from "../components/MainBody";
+
+ReactGA.initialize("UA-136387472-1");
 
 const UsingTypescript: React.FC = () => {
   const data = useStaticQuery(graphql`
