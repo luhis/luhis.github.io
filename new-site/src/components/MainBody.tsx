@@ -27,7 +27,16 @@ const MainBody: React.FC = () => {
           <Media>
             <Media.Item>
               <p>
-                <strong>Mindshare (WPP)</strong> <small>(Developer)</small> <small>December 2019 - June 2020</small>
+                <strong>Auk Technology</strong> <small>(Developer)</small> <small>August 2020 - Present</small>
+                <br />Work on inflating trading systems.</p>
+            </Media.Item>
+          </Media>
+        </Box>
+        <Box>
+          <Media>
+            <Media.Item>
+              <p>
+                <strong>Mindshare (WPP)</strong> <small>(Developer)</small> <small>December 2019 - July 2020</small>
                 <br />Produced internal tools for use in the media industry.</p>
             </Media.Item>
           </Media>
