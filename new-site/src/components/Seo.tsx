@@ -12,7 +12,7 @@ const SEO: FunctionComponent<{}> = () => {
   return (
     <Helmet
       htmlAttributes={{
-        lang: "en"
+        lang: "en",
       }}
       title="Matthew McCorry CV"
       meta={[
