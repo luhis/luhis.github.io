@@ -24,6 +24,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn --cwd ./new-site install --frozen-lockfile
-    - run: yarn --cwd ./new-site type-check
-    - run: yarn --cwd ./new-site build
+    - run: yarn install --frozen-lockfile
+    - run: yarn type-check
+    - run: yarn build
