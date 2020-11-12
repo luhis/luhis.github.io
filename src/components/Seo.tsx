@@ -8,13 +8,13 @@
 import React, { FunctionComponent } from "react"
 import { Helmet } from "react-helmet"
 
-const SEO: FunctionComponent<{}> = () => {
+const SEO: FunctionComponent<{title: string}> = ({title}) => {
   return (
     <Helmet
       htmlAttributes={{
         lang: "en",
       }}
-      title="Matthew McCorry CV"
+      title={title}
       meta={[
         {
           name: `author`,

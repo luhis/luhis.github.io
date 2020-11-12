@@ -1,6 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Content, Title } from "rbx"
+import { Column, Content, Title } from "rbx"
+
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
+import LeftCol from "../components/LeftCol"
 
 interface Post {
   readonly id: number
@@ -18,19 +22,26 @@ const Blog: React.FC<{ data: { blog: { posts: readonly Post[] } } }> = ({
 }) => {
   const { posts } = data.blog
   return (
-    <React.Fragment>
-      <Title>My blog posts</Title>
+    <Layout>
+      <SEO title="Matt McCorry's Blog" />
+      <Column.Group>
+        <Column size="one-quarter">
+          <LeftCol />
+        </Column>
+        <Column>
+          {posts.map(post => (
+            <article key={post.id}>
+              <Title size={3}>{post.frontmatter.title}</Title>
+              <small>
+                {post.frontmatter.author}, {post.frontmatter.date}
+              </small>
+              <Content dangerouslySetInnerHTML={{ __html: post.html }} />
+            </article>
+          ))}
+        </Column>
+      </Column.Group>
 
-      {posts.map(post => (
-        <article key={post.id}>
-          <Title size={3}>{post.frontmatter.title}</Title>
-          <small>
-            {post.frontmatter.author}, {post.frontmatter.date}
-          </small>
-          <Content dangerouslySetInnerHTML={{ __html: post.html }}/>
-        </article>
-      ))}
-    </React.Fragment>
+    </Layout>
   )
 }
 
