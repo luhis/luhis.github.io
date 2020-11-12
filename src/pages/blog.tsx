@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Content, Title } from "rbx"
 
 interface Post {
   readonly id: number
@@ -9,27 +10,27 @@ interface Post {
     readonly date: string
   }
   readonly excerpt: string
+  readonly html: string
 }
 
 const Blog: React.FC<{ data: { blog: { posts: readonly Post[] } } }> = ({
   data,
 }) => {
   const { posts } = data.blog
-
   return (
-    <div>
-      <h1>My blog posts</h1>
+    <Content>
+      <Title>My blog posts</Title>
 
       {posts.map(post => (
         <article key={post.id}>
-          <h2>post.frontmatter.title</h2>
+          <h2>{post.frontmatter.title}</h2>
           <small>
             {post.frontmatter.author}, {post.frontmatter.date}
           </small>
-          <p>{post.excerpt}</p>
+          <div dangerouslySetInnerHTML={{ __html: post.html }}/>
         </article>
       ))}
-    </div>
+    </Content>
   )
 }
 
@@ -44,6 +45,7 @@ export const pageQuery = graphql`
           title
           author
         }
+        html
         excerpt
         id
       }

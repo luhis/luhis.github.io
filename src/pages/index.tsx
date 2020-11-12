@@ -1,12 +1,13 @@
 // If you don't want to use TypeScript you can delete this file!
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import {
   FaHome,
   FaEnvelopeOpen,
   FaPhone,
   FaGithub,
   FaLinkedin,
+  FaBlog,
 } from "react-icons/fa"
 import { Column, Hero, Image, Title, Container, Menu } from "rbx"
 import Img from "gatsby-image"
@@ -92,6 +93,11 @@ const UsingTypescript: React.FC = () => {
                       <a href="https://github.com/luhis" className="icon-text">
                         <FaGithub /> luhis
                       </a>
+                    </Menu.List.Item>
+                    <Menu.List.Item>
+                      <Link to="/blog" className="icon-text">
+                        <FaBlog /> Blog
+                      </Link>
                     </Menu.List.Item>
                   </Menu.List>
                 </Menu>
