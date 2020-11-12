@@ -18,19 +18,19 @@ const Blog: React.FC<{ data: { blog: { posts: readonly Post[] } } }> = ({
 }) => {
   const { posts } = data.blog
   return (
-    <Content>
+    <React.Fragment>
       <Title>My blog posts</Title>
 
       {posts.map(post => (
         <article key={post.id}>
-          <h2>{post.frontmatter.title}</h2>
+          <Title size={3}>{post.frontmatter.title}</Title>
           <small>
             {post.frontmatter.author}, {post.frontmatter.date}
           </small>
-          <div dangerouslySetInnerHTML={{ __html: post.html }}/>
+          <Content dangerouslySetInnerHTML={{ __html: post.html }}/>
         </article>
       ))}
-    </Content>
+    </React.Fragment>
   )
 }
 
