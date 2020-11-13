@@ -18,6 +18,7 @@
     "gatsby-transformer-remark": "2.10.0",
     "gatsby-transformer-sharp": "2.6.0",
     "gh-pages": "3.1.0",
+    "highlight.js": "^10.3.2",
     "preact": "10.5.7",
     "preact-render-to-string": "5.1.11",
     "prop-types": "15.7.2",

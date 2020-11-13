@@ -16,7 +16,7 @@ const MyComponent: FC<{name: string}> = ({name}) => <span>Hello {name}</span>
 ```
 
 In VueJS by contrast, components require much more work.  You must create the template, script, and style sections. It must be a new file.
-```JavaScript
+```TypeScript
 <Template>
     <div>Hello {{name}}</div>
 </Template>
