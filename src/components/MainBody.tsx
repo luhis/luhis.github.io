@@ -36,7 +36,7 @@ const MainBody: React.FC = () => {
                   <strong>Auk Technology</strong> <small>(Developer)</small>{" "}
                   <small>August 2020 - Present</small>
                   <br />
-                  Work on inflating trading systems.
+                  Working on inflating trading systems.
                 </p>
               </Media.Item>
             </Media>
