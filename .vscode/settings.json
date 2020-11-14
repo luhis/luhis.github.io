@@ -1,10 +1,11 @@
 {
   "cSpell.words": [
-    "Corry",
+    "mccorry",
     "Gendis",
     "Linkedin",
     "Schroders",
     "frontmatter",
     "preact"
-  ]
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
