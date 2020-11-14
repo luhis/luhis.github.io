@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import { Column, Content, Title } from "rbx"
-import "highlight.js/styles/default.css";
-import hljs from 'highlight.js';
+import "highlight.js/styles/default.css"
+import hljs from "highlight.js"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
@@ -24,10 +24,10 @@ const Blog: React.FC<{ data: { blog: { posts: readonly Post[] } } }> = ({
 }) => {
   const { posts } = data.blog
   useEffect(() => {
-    document.querySelectorAll('code').forEach((block) => {
-      hljs.highlightBlock(block);
-    });
-  });
+    document.querySelectorAll("code").forEach(block => {
+      hljs.highlightBlock(block)
+    })
+  })
   return (
     <Layout>
       <SEO title="Matt McCorry's Blog" />
@@ -47,7 +47,6 @@ const Blog: React.FC<{ data: { blog: { posts: readonly Post[] } } }> = ({
           ))}
         </Column>
       </Column.Group>
-
     </Layout>
   )
 }

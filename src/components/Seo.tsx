@@ -8,7 +8,7 @@
 import React, { FunctionComponent } from "react"
 import { Helmet } from "react-helmet"
 
-const SEO: FunctionComponent<{title: string}> = ({title}) => {
+const SEO: FunctionComponent<{ title: string }> = ({ title }) => {
   return (
     <Helmet
       htmlAttributes={{
