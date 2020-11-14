@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import { Column, Content, Tag, Title } from "rbx"
-import hljs from "highlight.js"
+import { highlightBlock } from "highlight.js"
 import "highlight.js/styles/default.css"
 
 import Layout from "../components/Layout"
@@ -26,7 +26,7 @@ const Blog: React.FC<{ data: { blog: { posts: readonly Post[] } } }> = ({
   const { posts } = data.blog
   useEffect(() => {
     document.querySelectorAll("code").forEach(block => {
-      hljs.highlightBlock(block)
+      highlightBlock(block)
     })
   })
   return (
