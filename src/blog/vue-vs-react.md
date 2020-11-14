@@ -2,6 +2,7 @@
 title: VueJS vs React
 author: Matt McCorry
 date: 2020-11-14
+tags: React,VueJs,JavaScript
 ---
 
 ## Impressions of Vue vs React

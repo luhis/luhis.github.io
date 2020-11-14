@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import { graphql } from "gatsby"
-import { Column, Content, Title } from "rbx"
-import "highlight.js/styles/default.css"
+import { Column, Content, Tag, Title } from "rbx"
 import hljs from "highlight.js"
+import "highlight.js/styles/default.css"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
@@ -14,6 +14,7 @@ interface Post {
     readonly title: string
     readonly author: string
     readonly date: string
+    readonly tags: string
   }
   readonly excerpt: string
   readonly html: string
@@ -39,6 +40,11 @@ const Blog: React.FC<{ data: { blog: { posts: readonly Post[] } } }> = ({
           {posts.map(post => (
             <article key={post.id}>
               <Title size={3}>{post.frontmatter.title}</Title>
+              <Tag.Group>
+                {post.frontmatter.tags.split(",").map((t: string) => (
+                  <Tag key={t}>{t}</Tag>
+                ))}
+              </Tag.Group>
               <small>
                 {post.frontmatter.author}, {post.frontmatter.date}
               </small>
@@ -61,6 +67,7 @@ export const pageQuery = graphql`
           date(fromNow: true)
           title
           author
+          tags
         }
         html
         excerpt
