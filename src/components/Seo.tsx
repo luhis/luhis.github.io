@@ -5,8 +5,8 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { FunctionComponent } from "react"
-import { Helmet } from "react-helmet"
+import React, { FunctionComponent } from "react";
+import { Helmet } from "react-helmet";
 
 const SEO: FunctionComponent<{ title: string }> = ({ title }) => {
   return (
@@ -50,6 +50,6 @@ const SEO: FunctionComponent<{ title: string }> = ({ title }) => {
         },
       ]}
     />
-  )
-}
-export default SEO
+  );
+};
+export default SEO;

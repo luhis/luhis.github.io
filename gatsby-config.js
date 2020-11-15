@@ -46,4 +46,4 @@ module.exports = {
     `gatsby-plugin-preact`,
     `gatsby-transformer-remark`,
   ],
-}
+};

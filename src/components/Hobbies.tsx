@@ -1,5 +1,5 @@
-import React from "react"
-import { Menu } from "rbx"
+import React from "react";
+import { Menu } from "rbx";
 
 const Hobbies: React.FC = () => (
   <React.Fragment>
@@ -16,6 +16,6 @@ const Hobbies: React.FC = () => (
       </Menu.List.Item>
     </Menu.List>
   </React.Fragment>
-)
+);
 
-export default Hobbies
+export default Hobbies;

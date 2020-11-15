@@ -1,11 +1,11 @@
 // If you don't want to use TypeScript you can delete this file!
-import React from "react"
-import { Column } from "rbx"
+import React from "react";
+import { Column } from "rbx";
 
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-import MainBody from "../components/MainBody"
-import LeftCol from "../components/LeftCol"
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
+import MainBody from "../components/MainBody";
+import LeftCol from "../components/LeftCol";
 
 const UsingTypescript: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const UsingTypescript: React.FC = () => {
         </Column>
       </Column.Group>
     </Layout>
-  )
-}
+  );
+};
 
-export default UsingTypescript
+export default UsingTypescript;

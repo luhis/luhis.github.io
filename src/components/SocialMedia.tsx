@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import { FaLinkedin, FaGithub, FaBlog, FaGlobe } from "react-icons/fa"
-import { Menu } from "rbx"
+import React from "react";
+import { Link } from "gatsby";
+import { FaLinkedin, FaGithub, FaBlog, FaGlobe } from "react-icons/fa";
+import { Menu } from "rbx";
 
 const SocialMedia: React.FC = () => (
   <React.Fragment>
@@ -32,6 +32,6 @@ const SocialMedia: React.FC = () => (
       </Menu.List.Item>
     </Menu.List>
   </React.Fragment>
-)
+);
 
-export default SocialMedia
+export default SocialMedia;

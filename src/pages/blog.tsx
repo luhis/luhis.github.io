@@ -1,16 +1,16 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import { Column, Title } from "rbx"
+import React from "react";
+import { graphql, Link } from "gatsby";
+import { Column, Title } from "rbx";
 
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-import LeftCol from "../components/LeftCol"
-import { PostSummary } from "../types/types"
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
+import LeftCol from "../components/LeftCol";
+import { PostSummary } from "../types/types";
 
 const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
   data,
 }) => {
-  const { posts } = data.blog
+  const { posts } = data.blog;
 
   return (
     <Layout>
@@ -20,6 +20,7 @@ const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
           <LeftCol />
         </Column>
         <Column>
+          <Title>BLog Posts</Title>
           {posts.map(post => (
             <article key={post.id}>
               <Link to={`/blog${post.fields.slug}`}>
@@ -34,10 +35,10 @@ const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
         </Column>
       </Column.Group>
     </Layout>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
 
 export const pageQuery = graphql`
   query MyQuery {
@@ -57,4 +58,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

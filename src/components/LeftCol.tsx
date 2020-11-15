@@ -1,11 +1,11 @@
-import React from "react"
-import { Hero, Image, Title, Container, Menu } from "rbx"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { Hero, Image, Title, Container, Menu } from "rbx";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
-import Contact from "./Contact"
-import Hobbies from "./Hobbies"
-import SocialMedia from "./SocialMedia"
+import Contact from "./Contact";
+import Hobbies from "./Hobbies";
+import SocialMedia from "./SocialMedia";
 
 const LeftCol: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -18,7 +18,7 @@ const LeftCol: React.FC = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <Hero color="light" size="fullheight">
       <Hero.Head>
@@ -41,7 +41,7 @@ const LeftCol: React.FC = () => {
         </Container>
       </Hero.Body>
     </Hero>
-  )
-}
+  );
+};
 
-export default LeftCol
+export default LeftCol;

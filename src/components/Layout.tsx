@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import { Container } from "rbx"
+import React from "react";
+import { Container } from "rbx";
 
-import "rbx/index.css"
+import "rbx/index.css";
 
 const Layout: React.FC<{ children: readonly JSX.Element[] }> = ({
   children,
@@ -22,7 +22,7 @@ const Layout: React.FC<{ children: readonly JSX.Element[] }> = ({
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
     </Container>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

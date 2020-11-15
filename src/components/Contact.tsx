@@ -1,6 +1,6 @@
-import React from "react"
-import { FaHome, FaEnvelopeOpen, FaPhone } from "react-icons/fa"
-import { Menu } from "rbx"
+import React from "react";
+import { FaHome, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
+import { Menu } from "rbx";
 
 const Contact: React.FC = () => (
   <React.Fragment>
@@ -21,6 +21,6 @@ const Contact: React.FC = () => (
       </Menu.List.Item>
     </Menu.List>
   </React.Fragment>
-)
+);
 
-export default Contact
+export default Contact;

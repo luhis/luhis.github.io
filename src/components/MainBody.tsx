@@ -1,5 +1,5 @@
-import React from "react"
-import { Hero, Title, Container, Box, Media } from "rbx"
+import React from "react";
+import { Hero, Title, Container, Box, Media } from "rbx";
 
 const MainBody: React.FC = () => {
   return (
@@ -123,7 +123,7 @@ const MainBody: React.FC = () => {
         </Container>
       </Hero.Body>
     </Hero>
-  )
-}
+  );
+};
 
-export default MainBody
+export default MainBody;
