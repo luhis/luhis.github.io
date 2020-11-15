@@ -10,9 +10,7 @@ import { Container } from "rbx";
 
 import "rbx/index.css";
 
-const Layout: React.FC<{ children: readonly JSX.Element[] }> = ({
-  children,
-}) => {
+const Layout: React.FC = ({ children }) => {
   return (
     <Container fluid>
       <main>{children}</main>

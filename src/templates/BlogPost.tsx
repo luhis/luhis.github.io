@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from "react";
 import { graphql } from "gatsby";
 import { highlightBlock } from "highlight.js";
-import { Column, Content, Tag, Title } from "rbx";
+import { Column, Content, Title } from "rbx";
 
 import "highlight.js/styles/default.css";
 
@@ -9,6 +9,7 @@ import Layout from "../components/Layout";
 import LeftCol from "../components/LeftCol";
 import SEO from "../components/Seo";
 import { Post } from "../types/types";
+import BlogTags from "../components/BlogTags";
 
 const BlogPost: FC<{ data: { markdownRemark: Post } }> = ({ data }) => {
   const post = data.markdownRemark;
@@ -25,11 +26,7 @@ const BlogPost: FC<{ data: { markdownRemark: Post } }> = ({ data }) => {
         <Column>
           <article>
             <Title size={3}>{post.frontmatter.title}</Title>
-            <Tag.Group>
-              {post.frontmatter.tags.split(",").map((t: string) => (
-                <Tag key={t}>{t}</Tag>
-              ))}
-            </Tag.Group>
+            <BlogTags tags={post.frontmatter.tags} />
             <Title subtitle>
               {post.frontmatter.author}, {post.frontmatter.date}
             </Title>

@@ -5,6 +5,7 @@ import { Column, Title } from "rbx";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 import LeftCol from "../components/LeftCol";
+import BlogTags from "../components/BlogTags";
 import { PostSummary } from "../types/types";
 
 const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
@@ -20,7 +21,7 @@ const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
           <LeftCol />
         </Column>
         <Column>
-          <Title>BLog Posts</Title>
+          <Title>Blog Posts</Title>
           {posts.map(post => (
             <article key={post.id}>
               <Link to={`/blog${post.fields.slug}`}>
@@ -29,6 +30,7 @@ const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
                   {post.frontmatter.author}, {post.frontmatter.date}
                 </Title>
               </Link>
+              <BlogTags tags={post.frontmatter.tags} />
               <p>{post.excerpt}</p>
             </article>
           ))}
@@ -42,7 +44,9 @@ export default Blog;
 
 export const pageQuery = graphql`
   query MyQuery {
-    blog: allMarkdownRemark {
+    blog: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       posts: nodes {
         fields {
           slug
