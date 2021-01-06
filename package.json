@@ -26,7 +26,7 @@
     "react-dom": "17.0.1",
     "react-helmet": "6.1.0",
     "react-icons": "4.1.0",
-    "trunx": "^0.36.3",
+    "trunx": "0.36.3",
     "typescript": "4.1.3"
   },
   "devDependencies": {
