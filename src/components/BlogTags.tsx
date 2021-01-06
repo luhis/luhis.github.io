@@ -1,12 +1,12 @@
 import React from "react";
-import { Tag } from "rbx";
+import { Tag, Tags } from "trunx";
 
 const BlogTags: React.FC<{ tags: string }> = ({ tags }) => (
-  <Tag.Group>
+  <Tags>
     {tags.split(",").map((t: string) => (
       <Tag key={t}>{t}</Tag>
     ))}
-  </Tag.Group>
+  </Tags>
 );
 
 export default BlogTags;

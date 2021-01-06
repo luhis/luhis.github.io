@@ -1,19 +1,19 @@
 import React from "react";
-import { Menu } from "rbx";
+import { Menu } from "trunx";
 
 const Hobbies: React.FC = () => (
   <React.Fragment>
     <Menu.Label>Hobbies</Menu.Label>
     <Menu.List>
-      <Menu.List.Item>
+      <Menu>
         <a>Electronics</a>
-      </Menu.List.Item>
-      <Menu.List.Item>
+      </Menu>
+      <Menu>
         <a>Grass Autotest racing</a>
-      </Menu.List.Item>
-      <Menu.List.Item>
+      </Menu>
+      <Menu>
         <a>Ancient History</a>
-      </Menu.List.Item>
+      </Menu>
     </Menu.List>
   </React.Fragment>
 );

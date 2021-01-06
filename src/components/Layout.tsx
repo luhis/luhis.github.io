@@ -6,13 +6,13 @@
  */
 
 import React from "react";
-import { Container } from "rbx";
+import { Container } from "trunx";
 
-import "rbx/index.css";
+import "bulma/css/bulma.css";
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <Container fluid>
+    <Container isFluid>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with

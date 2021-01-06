@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { Column, Title } from "rbx";
+import { Column, Columns, Title, Subtitle } from "trunx";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
@@ -16,8 +16,8 @@ const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
   return (
     <Layout>
       <SEO title="Matt McCorry's Blog Index" />
-      <Column.Group>
-        <Column size="one-quarter">
+      <Columns>
+        <Column isOneQuarter>
           <LeftCol />
         </Column>
         <Column>
@@ -26,16 +26,16 @@ const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
             <article key={post.id}>
               <Link to={`/blog${post.fields.slug}`}>
                 <Title>{post.frontmatter.title}</Title>
-                <Title subtitle>
+                <Subtitle>
                   {post.frontmatter.author}, {post.frontmatter.date}
-                </Title>
+                </Subtitle>
               </Link>
               <BlogTags tags={post.frontmatter.tags} />
               <p>{post.excerpt}</p>
             </article>
           ))}
         </Column>
-      </Column.Group>
+      </Columns>
     </Layout>
   );
 };

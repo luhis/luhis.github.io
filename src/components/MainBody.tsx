@@ -1,11 +1,11 @@
 import React from "react";
-import { Hero, Title, Container, Box, Media } from "rbx";
+import { Hero, Title, Container, Box, Media } from "trunx";
 
 const MainBody: React.FC = () => {
   return (
-    <Hero size="fullheight">
-      <Hero.Body align="start">
-        <Container fluid>
+    <Hero isFullheight>
+      <Hero.Body isAlignContentStart>
+        <Container isFluid>
           <Title>Summary</Title>
           <p>
             I am a principally a .Net Developer. I have 8 years of experience
@@ -17,45 +17,45 @@ const MainBody: React.FC = () => {
           <Title>Education</Title>
           <Box>
             <Media>
-              <Media.Item>
+              <Media.Content>
                 <p>
                   <strong>Computing Science with Industrial Experience</strong>
                   <small>(University of Manchester)</small>{" "}
                   <small>Sept 2004 – Jun 2008</small>
                   <br /> 1st
                 </p>
-              </Media.Item>
+              </Media.Content>
             </Media>
           </Box>
           <Title>Experience</Title>
           <Title>Work</Title>
           <Box>
             <Media>
-              <Media.Item>
+              <Media.Content>
                 <p>
                   <strong>Auk Technology</strong> <small>(Developer)</small>{" "}
                   <small>August 2020 - Present</small>
                   <br />
-                  Working on inflating trading systems.
+                  Working on inflation trading systems.
                 </p>
-              </Media.Item>
+              </Media.Content>
             </Media>
           </Box>
           <Box>
             <Media>
-              <Media.Item>
+              <Media.Content>
                 <p>
                   <strong>Mindshare (WPP)</strong> <small>(Developer)</small>{" "}
                   <small>December 2019 - July 2020</small>
                   <br />
                   Produced internal tools for use in the media industry.
                 </p>
-              </Media.Item>
+              </Media.Content>
             </Media>
           </Box>
           <Box>
             <Media>
-              <Media.Item>
+              <Media.Content>
                 <p>
                   <strong>IQVIA</strong> <small>(Developer)</small>{" "}
                   <small>June 2019 - December 2019</small>
@@ -63,12 +63,12 @@ const MainBody: React.FC = () => {
                   Worked for a medical data processing company to product
                   querying and reporting tools.
                 </p>
-              </Media.Item>
+              </Media.Content>
             </Media>
           </Box>
           <Box>
             <Media>
-              <Media.Item>
+              <Media.Content>
                 <p>
                   <strong>Creative Technologies (Schroders)</strong>{" "}
                   <small>(Developer)</small> <small>Dec 2016 - June 2019</small>
@@ -78,12 +78,12 @@ const MainBody: React.FC = () => {
                   immutable ReactJS front end that connects to a .Net Core API I
                   wrote to allow clients to download documents from our system.
                 </p>
-              </Media.Item>
+              </Media.Content>
             </Media>
           </Box>
           <Box>
             <Media>
-              <Media.Item>
+              <Media.Content>
                 <p>
                   <strong>Into University Partnerships</strong>{" "}
                   <small>(Senior Developer)</small>{" "}
@@ -91,12 +91,12 @@ const MainBody: React.FC = () => {
                   <br /> Working as part of an Agile team I developed tools for
                   an E-Learning application.
                 </p>
-              </Media.Item>
+              </Media.Content>
             </Media>
           </Box>
           <Box>
             <Media>
-              <Media.Item>
+              <Media.Content>
                 <p>
                   <strong>TLM Nexus</strong> <small>(Developer)</small>{" "}
                   <small>Jan 2015 - Dec 2016</small>
@@ -104,12 +104,12 @@ const MainBody: React.FC = () => {
                   aircraft maintenance management system into a modular MVC
                   site.
                 </p>
-              </Media.Item>
+              </Media.Content>
             </Media>
           </Box>
           <Box>
             <Media>
-              <Media.Item>
+              <Media.Content>
                 <p>
                   <strong>Gendis</strong> <small>(Project Engineer)</small>{" "}
                   <small>Feb 2011 - Dec 2015</small>
@@ -117,7 +117,7 @@ const MainBody: React.FC = () => {
                   producing security products and software including a cloud
                   based building access control system.
                 </p>
-              </Media.Item>
+              </Media.Content>
             </Media>
           </Box>
         </Container>

@@ -1,6 +1,6 @@
 // If you don't want to use TypeScript you can delete this file!
 import React from "react";
-import { Column } from "rbx";
+import { Column, Columns } from "trunx";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
@@ -11,14 +11,14 @@ const UsingTypescript: React.FC = () => {
   return (
     <Layout>
       <SEO title="Matthew McCorry CV" />
-      <Column.Group>
-        <Column size="one-quarter">
+      <Columns>
+        <Column isOneQuarter>
           <LeftCol />
         </Column>
         <Column>
           <MainBody />
         </Column>
-      </Column.Group>
+      </Columns>
     </Layout>
   );
 };

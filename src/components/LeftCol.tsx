@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Image, Title, Container, Menu } from "rbx";
+import { Hero, Title, Container, Menu, Subtitle } from "trunx";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
@@ -20,18 +20,18 @@ const LeftCol: React.FC = () => {
     }
   `);
   return (
-    <Hero color="light" size="fullheight">
+    <Hero isLight isFullheight>
       <Hero.Head>
-        <Image.Container square>
+        <figure className="image">
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             alt="profile picture"
           />
-        </Image.Container>
+        </figure>
         <Title>Matthew McCorry</Title>
-        <Title subtitle>.Net and TypeScript Developer</Title>
+        <Subtitle>.Net and TypeScript Developer</Subtitle>
       </Hero.Head>
-      <Hero.Body class="align-start">
+      <Hero.Body isAlignContentStart>
         <Container>
           <Menu>
             <Contact />

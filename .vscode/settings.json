@@ -7,7 +7,8 @@
     "Schroders",
     "frontmatter",
     "mccorry",
-    "preact"
+    "preact",
+    "trunx"
   ],
   "typescript.tsdk": "node_modules\\typescript\\lib"
 }
