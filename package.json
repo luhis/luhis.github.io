@@ -6,7 +6,7 @@
   "author": "Matt McCorry <mccorry@gmail.com>",
   "dependencies": {
     "@types/react-helmet": "6.1.0",
-    "gatsby": "2.30.0",
+    "gatsby": "2.30.1",
     "gatsby-image": "2.9.0",
     "gatsby-plugin-google-analytics": "2.9.0",
     "gatsby-plugin-manifest": "2.10.0",
