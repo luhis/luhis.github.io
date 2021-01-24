@@ -13449,10 +13449,10 @@ trough@^1.0.0:
   resolved "https://registry.yarnpkg.com/true-case-path/-/true-case-path-2.2.1.tgz#c5bf04a5bbec3fd118be4084461b3a27c4d796bf"
   integrity sha512-0z3j8R7MCjy10kc/g+qg7Ln3alJTodw9aDuVWZa3uiWqfuBMKeAeP2ocWcxoyM3D73yz3Jt/Pu4qPr4wHSdB/Q==
 
-trunx@0.38.1:
-  version "0.38.1"
-  resolved "https://registry.yarnpkg.com/trunx/-/trunx-0.38.1.tgz#04a1acf1e69f34a9fb65408ba3408fefb18615e0"
-  integrity sha512-DyIxUcBk0tSI0+a8ziS0yt2ZdTaSOZX6zwot3JNMm+lIX+oFY6hTR5wFVhVZ9q/RO97WZ5Xwp28ijvmJ3Dp2zw==
+trunx@0.38.2:
+  version "0.38.2"
+  resolved "https://registry.yarnpkg.com/trunx/-/trunx-0.38.2.tgz#59def9b45f7ccf333deb33b69bfaa5e6ad9f6f08"
+  integrity sha512-f4nM7M/x975SfcSUdk3W5Lc/ap7cpsUFv/9D6EYCOpOD4E2t4kXNCM7WZR7Fjpm6Hj9qHwdwj7uPRq2n1BDc7g==
   dependencies:
     bulma "^0.9.1"
     classnames "^2.2.6"
