@@ -1,12 +1,12 @@
 import React from "react";
-import { Tag, Tags } from "trunx";
+import { Tag } from "react-bulma-components";
 
 const BlogTags: React.FC<{ tags: string }> = ({ tags }) => (
-  <Tags>
+  <Tag.Group>
     {tags.split(",").map((t: string) => (
       <Tag key={t}>{t}</Tag>
     ))}
-  </Tags>
+  </Tag.Group>
 );
 
 export default BlogTags;

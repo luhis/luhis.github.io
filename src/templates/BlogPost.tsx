@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from "react";
 import { graphql } from "gatsby";
 import { highlightBlock } from "highlight.js";
-import { Column, Columns, Content, Title, Subtitle } from "trunx";
+import { Columns, Content, Heading } from "react-bulma-components";
 
 import "highlight.js/styles/default.css";
 
@@ -20,19 +20,19 @@ const BlogPost: FC<{ data: { markdownRemark: Post } }> = ({ data }) => {
     <Layout>
       <SEO title={`Matt McCorry's Blog ${post.frontmatter.title}`} />
       <Columns>
-        <Column isOneQuarter>
+        <Columns.Column size={3}>
           <LeftCol />
-        </Column>
-        <Column>
+        </Columns.Column>
+        <Columns.Column>
           <article>
-            <Title is3>{post.frontmatter.title}</Title>
+            <Heading size={3}>{post.frontmatter.title}</Heading>
             <BlogTags tags={post.frontmatter.tags} />
-            <Subtitle>
+            <Heading subtitle>
               {post.frontmatter.author}, {post.frontmatter.date}
-            </Subtitle>
+            </Heading>
             <Content dangerouslySetInnerHTML={{ __html: post.html }} />
           </article>
-        </Column>
+        </Columns.Column>
       </Columns>
     </Layout>
   );

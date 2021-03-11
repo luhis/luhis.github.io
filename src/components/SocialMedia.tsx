@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 import { FaLinkedin, FaGithub, FaBlog, FaGlobe } from "react-icons/fa";
-import { Menu } from "trunx";
+import { Menu } from "react-bulma-components";
 
 const SocialMedia: React.FC = () => (
   <React.Fragment>
-    <Menu.Label>Social Media</Menu.Label>
+    Social Media
     <Menu.List>
       <Menu>
         <a

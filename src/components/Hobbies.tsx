@@ -1,9 +1,9 @@
 import React from "react";
-import { Menu } from "trunx";
+import { Menu } from "react-bulma-components";
 
 const Hobbies: React.FC = () => (
   <React.Fragment>
-    <Menu.Label>Hobbies</Menu.Label>
+    Hobbies
     <Menu.List>
       <Menu>
         <a>Electronics</a>

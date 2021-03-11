@@ -1,10 +1,10 @@
 import React from "react";
 import { FaHome, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
-import { Menu } from "trunx";
+import { Menu } from "react-bulma-components";
 
 const Contact: React.FC = () => (
   <React.Fragment>
-    <Menu.Label>Contact</Menu.Label>
+    Contact
     <Menu.List>
       <Menu>
         <a>

@@ -1,12 +1,12 @@
 import React from "react";
-import { Hero, Title, Container, Box, Media } from "trunx";
+import { Hero, Heading, Container, Box, Media } from "react-bulma-components";
 
 const MainBody: React.FC = () => {
   return (
-    <Hero isFullheight>
-      <Hero.Body isAlignContentStart>
-        <Container isFluid>
-          <Title>Summary</Title>
+    <Hero size="fullheight">
+      <Hero.Body>
+        <Container fluid>
+          <Heading>Summary</Heading>
           <p>
             I am a principally a .Net Developer. I have 8 years of experience
             working with various Microsoft languages and frameworks. I have 2
@@ -14,7 +14,7 @@ const MainBody: React.FC = () => {
             sizeable amount of F# experience from personal projects that has led
             me to pick up functional and immutable styles in my work.
           </p>
-          <Title>Education</Title>
+          <Heading>Education</Heading>
           <Box>
             <Media>
               <Media.Content>
@@ -27,8 +27,8 @@ const MainBody: React.FC = () => {
               </Media.Content>
             </Media>
           </Box>
-          <Title>Experience</Title>
-          <Title>Work</Title>
+          <Heading>Experience</Heading>
+          <Heading>Work</Heading>
           <Box>
             <Media>
               <Media.Content>

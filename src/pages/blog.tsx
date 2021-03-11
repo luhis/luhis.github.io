@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { Column, Columns, Title, Subtitle } from "trunx";
+import { Columns, Heading } from "react-bulma-components";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
@@ -17,24 +17,24 @@ const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
     <Layout>
       <SEO title="Matt McCorry's Blog Index" />
       <Columns>
-        <Column isOneQuarter>
+        <Columns.Column size={3}>
           <LeftCol />
-        </Column>
-        <Column>
-          <Title>Blog Posts</Title>
+        </Columns.Column>
+        <Columns.Column>
+          <Heading>Blog Posts</Heading>
           {posts.map(post => (
             <article key={post.id}>
               <Link to={`/blog${post.fields.slug}`}>
-                <Title>{post.frontmatter.title}</Title>
-                <Subtitle>
+                <Heading>{post.frontmatter.title}</Heading>
+                <Heading subtitle>
                   {post.frontmatter.author}, {post.frontmatter.date}
-                </Subtitle>
+                </Heading>
               </Link>
               <BlogTags tags={post.frontmatter.tags} />
               <p>{post.excerpt}</p>
             </article>
           ))}
-        </Column>
+        </Columns.Column>
       </Columns>
     </Layout>
   );

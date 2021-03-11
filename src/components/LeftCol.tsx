@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Title, Container, Menu, Subtitle } from "trunx";
+import { Hero, Heading, Container, Menu } from "react-bulma-components";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
@@ -20,7 +20,7 @@ const LeftCol: React.FC = () => {
     }
   `);
   return (
-    <Hero isLight isFullheight>
+    <Hero color="light" size="fullheight">
       <Hero.Head>
         <figure className="image">
           <Img
@@ -28,10 +28,10 @@ const LeftCol: React.FC = () => {
             alt="profile picture"
           />
         </figure>
-        <Title>Matthew McCorry</Title>
-        <Subtitle>.Net and TypeScript Developer</Subtitle>
+        <Heading>Matthew McCorry</Heading>
+        <Heading subtitle>.Net and TypeScript Developer</Heading>
       </Hero.Head>
-      <Hero.Body isAlignContentStart>
+      <Hero.Body>
         <Container>
           <Menu>
             <Contact />
