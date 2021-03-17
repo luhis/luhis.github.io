@@ -45,5 +45,6 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-preact`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-image`,
   ],
 };
