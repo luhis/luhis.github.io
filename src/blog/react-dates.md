@@ -2,7 +2,7 @@
 title: React Dates
 author: Matt McCorry
 date: 2021-03-17
-tags: C#,DotNet,Analysers
+tags: React,TypeScript
 ---
 
 # React Dates
