@@ -8,9 +8,6 @@
 import React from "react";
 import { Container } from "react-bulma-components";
 
-import "bulma/css/bulma.css";
-import "../style/global.css";
-
 const Layout: React.FC = ({ children }) => {
   return (
     <Container fluid>
