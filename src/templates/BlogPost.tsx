@@ -14,7 +14,7 @@ import BlogTags from "../components/BlogTags";
 const BlogPost: FC<{ data: { markdownRemark: Post } }> = ({ data }) => {
   const post = data.markdownRemark;
   useEffect(() => {
-    document.querySelectorAll("pre code").forEach(highlightBlock);
+    document.querySelectorAll("pre code").forEach((e) => highlightBlock(e as HTMLElement));
   });
   return (
     <Layout>
