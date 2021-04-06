@@ -10,7 +10,7 @@ import { Container } from "react-bulma-components";
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <Container fluid>
+    <Container max>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with

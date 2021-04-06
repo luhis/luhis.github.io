@@ -18,7 +18,7 @@ const LeftCol: React.FC = () => {
 `);
   return (
     <Hero color="light" size="fullheight">
-      <Hero.Head>
+      <Hero.Header>
         <figure className="image">
           <GatsbyImage
             image={data.placeholderImage.childImageSharp.gatsbyImageData}
@@ -26,7 +26,7 @@ const LeftCol: React.FC = () => {
         </figure>
         <Heading>Matthew McCorry</Heading>
         <Heading subtitle>.Net and TypeScript Developer</Heading>
-      </Hero.Head>
+      </Hero.Header>
       <Hero.Body>
         <Container>
           <Menu>
