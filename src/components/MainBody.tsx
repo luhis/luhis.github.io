@@ -6,7 +6,7 @@ const MainBody: React.FC = () => {
     <Hero size="fullheight">
       <Hero.Body>
         <Container max>
-          <Heading>Summary TEST XX</Heading>
+          <Heading>Summary</Heading>
           <p>
             I am a principally a .Net Developer. I have 8 years of experience
             working with various Microsoft languages and frameworks. I have 2
