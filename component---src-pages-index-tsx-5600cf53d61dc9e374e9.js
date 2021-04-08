@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[691],{6738:function(t,e,a){"use strict";a.r(e);var r=a(7294),u=a(5871),l=a(5167);e.default=function(){return r.createElement(u.Z,null,r.createElement(l.Z,{title:"Matthew McCorry CV"}))}}}]);
-//# sourceMappingURL=component---src-pages-index-tsx-5600cf53d61dc9e374e9.js.map
