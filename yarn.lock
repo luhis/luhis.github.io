@@ -3580,10 +3580,10 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@2.2.6:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
-  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+classnames@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
 
 clean-stack@^2.0.0:
   version "2.2.0"
@@ -11139,12 +11139,12 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-bulma-components@4.0.0-RC.8:
-  version "4.0.0-RC.8"
-  resolved "https://registry.yarnpkg.com/react-bulma-components/-/react-bulma-components-4.0.0-RC.8.tgz#d06cec02f9eac9a2c3742f24d8057b90a5c9003f"
-  integrity sha512-u6BHKWFbddgvOEeLYVNBxqcJuYie4iZiHRq+/EHvGhr8NPOE8xeeSOw1puW7ullE4B9eQAwbDnLK6kZ32cn4/A==
+react-bulma-components@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-bulma-components/-/react-bulma-components-4.0.0.tgz#9dfff9db889b4bd5a53e20cbe7c8f14262a58e5c"
+  integrity sha512-KKeBEUrta7nG409mLCC1yK/3EbgYkH+tEFEah5qg+UkMDRwLIYNb5AJaNVIpAI0HlwplmA1KOQBqOHrW/shQ3w==
   dependencies:
-    classnames "2.2.6"
+    classnames "2.3.1"
 
 react-dev-utils@^11.0.3:
   version "11.0.4"
