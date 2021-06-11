@@ -11463,10 +11463,10 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-bulma-components@4.0.6:
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/react-bulma-components/-/react-bulma-components-4.0.6.tgz#83e787103e8974dcbc757a349e3bb00a886d0bdb"
-  integrity sha512-lPWpm7lUvbwGOqGEBXv63GS8yplfUoraq/FUBz1QmA6Nl+57TV9NDjfeOz1Tsl4gsQUP2orKAhyFLG4sZ4LY3g==
+react-bulma-components@4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/react-bulma-components/-/react-bulma-components-4.0.7.tgz#b50b2f02b4332d3debf7a974fcae679aa49157d1"
+  integrity sha512-F6dsnkKWQU+dtaLO2gB+0RSbPBQAPIhzjn5C3SvUab7qJXlCM3mqy8+Rqc4j5UZdvfRjqwl4MKpkYSTAX6Z2ag==
   dependencies:
     classnames "2.3.1"
 
