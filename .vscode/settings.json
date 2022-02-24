@@ -1,13 +1,14 @@
 {
   "cSpell.words": [
+    "frontmatter",
     "Gendis",
+    "hljs",
     "Linkedin",
     "Linq",
-    "Nuget",
-    "Schroders",
-    "frontmatter",
     "mccorry",
+    "Nuget",
     "preact",
+    "Schroders",
     "trunx"
   ],
   "typescript.tsdk": "node_modules\\typescript\\lib"

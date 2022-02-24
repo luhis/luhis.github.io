@@ -33,10 +33,22 @@ const MainBody: React.FC = () => {
             <Media>
               <Media.Item>
                 <p>
-                  <strong>Auk Technology</strong> <small>(Developer)</small>{" "}
-                  <small>August 2020 - Present</small>
+                  <strong>Essensys</strong> <small>(Developer)</small>{" "}
+                  <small>July 2021 - Present</small>
                   <br />
-                  Working on inflation trading systems.
+                  Working on legacy shared office management system.
+                </p>
+              </Media.Item>
+            </Media>
+          </Box>
+          <Box>
+            <Media>
+              <Media.Item>
+                <p>
+                  <strong>Auk Technology</strong> <small>(Developer)</small>{" "}
+                  <small>August 2020 - July 2021</small>
+                  <br />
+                  Working on inflation, energy and crypto trading systems.
                 </p>
               </Media.Item>
             </Media>
