@@ -19,7 +19,7 @@ const MainBody: React.FC = () => {
             <Media>
               <Media.Item>
                 <p>
-                  <strong>Computing Science with Industrial Experience</strong>
+                  <strong>Computing Science with Industrial Experience</strong>{" "}
                   <small>(University of Manchester)</small>{" "}
                   <small>Sept 2004 – Jun 2008</small>
                   <br /> 1st
