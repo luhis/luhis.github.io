@@ -8,8 +8,8 @@ const MainBody: React.FC = () => {
         <Container max>
           <Heading>Summary</Heading>
           <p>
-            I am a principally a .Net Developer. I have 8 years of experience
-            working with various Microsoft languages and frameworks. I have 2
+            I am a principally a .Net Developer. I have 12 years of experience
+            working with various Microsoft languages and frameworks. I have 6
             years of experience working with React and TypeScript. I have a
             sizeable amount of F# experience from personal projects that has led
             me to pick up functional and immutable styles in my work.
