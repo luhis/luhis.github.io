@@ -20,7 +20,7 @@
     "gatsby-transformer-sharp": "4.20.0",
     "gh-pages": "4.0.0",
     "highlight.js": "11.6.0",
-    "preact": "10.10.2",
+    "preact": "10.10.3",
     "preact-render-to-string": "5.2.1",
     "prop-types": "15.8.1",
     "react": "17.0.2",
