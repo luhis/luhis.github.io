@@ -1,7 +1,7 @@
 ---
 title: Debugging DotNet with Fiddler
 author: Matt McCorry
-date: 2020-11-21
+date: 2022-09-21
 tags: Fiddler,DotNet
 ---
 
@@ -22,3 +22,5 @@ HttpClient.DefaultProxy = proxy;
 ```
 
 I put this into the constructor of my `Startup` class.  It works for me, I plan to remove the code once I'm done with debugging, but you could put a debug clause around it if you wanted to leave it there in production.
+
+![Image](./images/Fiddler.png "Fiddler Screenshot")
