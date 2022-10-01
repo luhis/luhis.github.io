@@ -1,9 +1,8 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import { graphql } from "gatsby";
-import hljs from "highlight.js";
 import { Columns, Content, Heading } from "react-bulma-components";
 
-import "highlight.js/styles/default.css";
+import "prismjs/themes/prism-solarizedlight.css";
 
 import Layout from "../components/Layout";
 import LeftCol from "../components/LeftCol";
@@ -13,9 +12,7 @@ import BlogTags from "../components/BlogTags";
 
 const BlogPost: FC<{ data: { markdownRemark: Post } }> = ({ data }) => {
   const post = data.markdownRemark;
-  useEffect(() => {
-    document.querySelectorAll("pre code").forEach((e) => hljs.highlightElement(e as HTMLElement));
-  });
+
   return (
     <Layout>
       <SEO title={`Matt McCorry's Blog ${post.frontmatter.title}`} />

@@ -1,3 +1,4 @@
-.content pre {
-    padding: 0;
-}
+
+.number {
+    all:revert;
+  }

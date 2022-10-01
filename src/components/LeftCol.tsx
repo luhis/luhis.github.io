@@ -8,21 +8,23 @@ import Hobbies from "./Hobbies";
 import SocialMedia from "./SocialMedia";
 
 const LeftCol: React.FC = () => {
-  const data = useStaticQuery(graphql`{
-  placeholderImage: file(relativePath: {eq: "profile.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 300, layout: CONSTRAINED)
+  const data = useStaticQuery(graphql`
+    {
+      placeholderImage: file(relativePath: { eq: "profile.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(width: 300, layout: CONSTRAINED)
+        }
+      }
     }
-  }
-}
-`);
+  `);
   return (
     <Hero color="light" size="fullheight">
       <Hero.Header>
         <figure className="image">
           <GatsbyImage
             image={data.placeholderImage.childImageSharp.gatsbyImageData}
-            alt="profile picture" />
+            alt="profile picture"
+          />
         </figure>
         <Heading>Matthew McCorry</Heading>
         <Heading subtitle>.Net and TypeScript Developer</Heading>

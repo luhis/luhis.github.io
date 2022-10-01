@@ -36,7 +36,10 @@ const MainBody: React.FC = () => {
                   <strong>Essensys</strong> <small>(Developer)</small>{" "}
                   <small>July 2021 - Present</small>
                   <br />
-                  Worked to maintain and add new features to a legacy office management system. Technologies used: .Net Framework, AngularJS.  Integrations with various systems: Stripe, GoCardless, Ezeep
+                  Worked to maintain and add new features to a legacy office
+                  management system. Technologies used: .Net Framework,
+                  AngularJS. Integrations with various systems: Stripe,
+                  GoCardless, Ezeep
                 </p>
               </Media.Item>
             </Media>
@@ -48,7 +51,10 @@ const MainBody: React.FC = () => {
                   <strong>Auk Technology</strong> <small>(Developer)</small>{" "}
                   <small>August 2020 - July 2021</small>
                   <br />
-                  Working in a small team work on various financial projects from a legacy inflation trading system in Vue 2, a legacy Gas Trading Platform in Angular 2, to a greenfield cryptocurrency trading system in React.
+                  Working in a small team work on various financial projects
+                  from a legacy inflation trading system in Vue 2, a legacy Gas
+                  Trading Platform in Angular 2, to a greenfield cryptocurrency
+                  trading system in React.
                 </p>
               </Media.Item>
             </Media>
