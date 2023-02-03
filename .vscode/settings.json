@@ -13,5 +13,6 @@
     "Schroders",
     "trunx"
   ],
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "cSpell.language": "en,en-GB"
 }
