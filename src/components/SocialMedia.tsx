@@ -32,9 +32,9 @@ const SocialMedia: React.FC = () => (
         </Link>
       </Menu>
       <Menu>
-        <a>
+        <div className="px-3 py-2">
           <FaWalkieTalkie title="70cm, 2m" /> M7ORY
-        </a>
+        </div>
       </Menu>
     </Menu.List>
   </React.Fragment>

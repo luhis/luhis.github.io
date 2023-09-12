@@ -7,9 +7,9 @@ const Contact: React.FC = () => (
     Contact
     <Menu.List>
       <Menu>
-        <a>
+        <div className="px-3 py-2">
           <FaPhone /> +44 (0)7851 326 402
-        </a>
+        </div>
       </Menu>
       <Menu>
         <a href="mailto:mccorry@gmail.com" className="icon-text">
@@ -17,9 +17,9 @@ const Contact: React.FC = () => (
         </a>
       </Menu>
       <Menu>
-        <a>
+        <div className="px-3 py-2">
           <FaHome /> Brighton, UK
-        </a>
+        </div>
       </Menu>
     </Menu.List>
   </React.Fragment>
