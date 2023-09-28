@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Matt McCorry <mccorry@gmail.com>",
   "dependencies": {
-    "@types/react-helmet": "6.1.6",
+    "@types/react-helmet": "6.1.7",
     "bulma": "0.9.4",
     "gatsby": "4.25.7",
     "gatsby-plugin-google-gtag": "^5.9.0",
