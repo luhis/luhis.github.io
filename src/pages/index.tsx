@@ -3,14 +3,15 @@ import React from "react";
 import { Columns } from "react-bulma-components";
 
 import Layout from "../components/Layout";
-import SEO from "../components/Seo";
+import SEO from "../components/Head";
 import MainBody from "../components/MainBody";
 import LeftCol from "../components/LeftCol";
+
+export const Head = () => <SEO title="Matthew McCorry CV" />;
 
 const UsingTypescript: React.FC = () => {
   return (
     <Layout>
-      <SEO title="Matthew McCorry CV" />
       <Columns>
         <Columns.Column size={3}>
           <LeftCol />

@@ -6,7 +6,7 @@ import "prismjs/themes/prism-solarizedlight.css";
 
 import Layout from "../components/Layout";
 import LeftCol from "../components/LeftCol";
-import SEO from "../components/Seo";
+import SEO from "../components/Head";
 import { Post } from "../types/types";
 import BlogTags from "../components/BlogTags";
 

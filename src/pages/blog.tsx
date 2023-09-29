@@ -3,10 +3,12 @@ import { graphql, Link } from "gatsby";
 import { Columns, Heading } from "react-bulma-components";
 
 import Layout from "../components/Layout";
-import SEO from "../components/Seo";
+import SEO from "../components/Head";
 import LeftCol from "../components/LeftCol";
 import BlogTags from "../components/BlogTags";
 import { PostSummary } from "../types/types";
+
+export const Head = () => <SEO title="Matt McCorry's Blog Index" />;
 
 const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
   data,
@@ -15,7 +17,6 @@ const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
 
   return (
     <Layout>
-      <SEO title="Matt McCorry's Blog Index" />
       <Columns>
         <Columns.Column size={3}>
           <LeftCol />
