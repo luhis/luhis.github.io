@@ -47,7 +47,7 @@ const SEO: FunctionComponent<{ title: string }> = ({ title }) => {
     <>
       <html lang="en" />
       <title>{title}</title>
-      {metas.map(m => <meta id={m.name} property={m.property} name={m.name} content={m.content} />)}
+      {metas.map(m => <meta key={m.name} property={m.property} name={m.name} content={m.content} />)}
     </>
   );
 };
