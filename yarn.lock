@@ -1889,9 +1889,9 @@
     regenerator-runtime "^0.13.4"
 
 "@babel/runtime@^7.20.13":
-  version "7.22.10"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.10.tgz#ae3e9631fd947cb7e3610d3e9d8fef5f76696682"
-  integrity sha512-21t/fkKLMZI4pqP2wlmsQAWnYW1PDyKyyUV4vCi+B25ydmdaYTKXPwCj0BzSUnZf4seIiYvSA3jcZ3gdsMFkLQ==
+  version "7.23.1"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.1.tgz#72741dc4d413338a91dcb044a86f3c0bc402646d"
+  integrity sha512-hC2v6p8ZSI/W0HUzh3V8C5g+NwSKzKPtJwSpTjwl0o297GP9+ZLQSkdvHz46CM3LqyoXxq+5G9komY+eSqSO0g==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -6557,9 +6557,9 @@ gatsby-parcel-config@0.16.0:
     "@parcel/transformer-json" "2.6.2"
 
 gatsby-plugin-google-gtag@^5.9.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.12.0.tgz#b7595083a74286ab92295b7c750a7a2a7adfb69e"
-  integrity sha512-Ih9YmiJh06pTqHZbOFCcXDjeRavT7HCafBIW7m46yJtryB3dnda1N0HhmN75dww59kEh+cbVkZS8QM58ccIKyg==
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.12.1.tgz#9f6b767e50b51bcd932a5dca6fd7465f44736974"
+  integrity sha512-pAqCW+FEww0l1Prvg7WeenwsMu5XJJg+/hyW2aP0uL2PETzTK6eQekkWE+moxrRXEt2r4V9+GdrpQnuma7a52A==
   dependencies:
     "@babel/runtime" "^7.20.13"
     minimatch "^3.1.2"
