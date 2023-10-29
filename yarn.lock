@@ -6491,9 +6491,9 @@ gatsby-parcel-config@0.16.0:
     "@parcel/transformer-json" "2.6.2"
 
 gatsby-plugin-google-gtag@^5.9.0:
-  version "5.12.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.12.2.tgz#8a806df04e85ba8261ec985a0c215d9182c81013"
-  integrity sha512-X8o0LeiY0cu8OOCDPihjaEMPVpPJgRgUm6EBHwjMGNk6btnDGI8jsq/62lUaMyEzOeGSD7OIMjAVTp86kxrNpA==
+  version "5.12.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.12.3.tgz#ff61ef2088b198df75664c6ed51041ea32434134"
+  integrity sha512-hQX/FAO631Il843XVzn6p6j0F3+baUhxs0RGkHoTlr60+KLZfr0LoP7WNlKjuWjah+r8L5slcTaq4fyAbv5v9g==
   dependencies:
     "@babel/runtime" "^7.20.13"
     minimatch "^3.1.2"
