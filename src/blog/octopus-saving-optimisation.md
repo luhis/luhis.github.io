@@ -7,7 +7,7 @@ tags: Electricity,Utilities
 
 ## Program Overview
 
-My energy provider has a system where on particular days they offer refund for reducing energy bellow your average consumption. [Saving Sessions](https://octopus.energy/saving-sessions/)
+My energy provider has a system where on particular days they offer refund for reducing energy below your average consumption. [Saving Sessions](https://octopus.energy/saving-sessions/)
 
 ## Basic Solution
 

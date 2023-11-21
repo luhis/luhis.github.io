@@ -38,7 +38,7 @@ Eagle eyed readers will notice that the carnet ticket are about £5 a return mor
 
 ## What is the optimal solution?
 
-We found that the difference between Monthly and Annual tickets was not much. The monthly ticket can have extra days tacked on to the end of it. This allows extending the ticket out to end on Friday, reducing the average cost, e.g. £20.07/Trip for a 1 month 3 day ticket. By taking a month + a few days ticket, starting on a Monday, ending on a Friday, or starting/ending at a holiday we can reduce the cost per trip to bellow the cost of a annual ticket.
+We found that the difference between Monthly and Annual tickets was not much. The monthly ticket can have extra days tacked on to the end of it. This allows extending the ticket out to end on Friday, reducing the average cost, e.g. £20.07/Trip for a 1 month 3 day ticket. By taking a month + a few days ticket, starting on a Monday, ending on a Friday, or starting/ending at a holiday we can reduce the cost per trip to below the cost of a annual ticket.
 
 ## What are the downsides to a split ticket?
 
