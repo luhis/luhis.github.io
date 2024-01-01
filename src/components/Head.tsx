@@ -59,6 +59,7 @@ const SEO: FunctionComponent<{ title: string }> = ({ title }) => {
           content={m.content}
         />
       ))}
+      <meta name="google-adsense-account" content="ca-pub-9088197012476861"></meta>
     </>
   );
 };
