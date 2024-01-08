@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import { FaLinkedin, FaGithub, FaBlog, FaGlobe } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaBlog,
+  FaGlobe,
+  FaLaptop,
+} from "react-icons/fa";
 import { FaWalkieTalkie } from "react-icons/fa6";
 import { Menu } from "react-bulma-components";
 
@@ -29,6 +35,11 @@ const SocialMedia: React.FC = () => (
       <Menu>
         <Link to="/" className="icon-text">
           <FaGlobe /> Website
+        </Link>
+      </Menu>
+      <Menu>
+        <Link to="/demos" className="icon-text">
+          <FaLaptop /> Demos
         </Link>
       </Menu>
       <Menu>
