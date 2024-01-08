@@ -1,14 +1,20 @@
 import React from "react";
 import { Hero, Heading, Container, Menu } from "react-bulma-components";
 import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 
 import Contact from "./Contact";
 import Hobbies from "./Hobbies";
 import SocialMedia from "./SocialMedia";
 
+type ImageData = {
+  readonly placeholderImage: {
+    readonly childImageSharp: { readonly gatsbyImageData: IGatsbyImageData };
+  };
+};
+
 const LeftCol: React.FC = () => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<ImageData>(graphql`
     {
       placeholderImage: file(relativePath: { eq: "profile.jpg" }) {
         childImageSharp {

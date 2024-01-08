@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `McCorry.dev`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@luhis`,
-    "google-adsense-account": "ca-pub-9088197012476861"
+    "google-adsense-account": "ca-pub-9088197012476861",
   },
+  graphqlTypegen: true,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -43,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
-        publisherId: `ca-pub-9088197012476861`
+        publisherId: `ca-pub-9088197012476861`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

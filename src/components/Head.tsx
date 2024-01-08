@@ -42,7 +42,7 @@ const metas = [
   },
 ];
 
-const SEO: FunctionComponent<{ title: string }> = ({ title }) => {
+const SEO: FunctionComponent<{ readonly title: string }> = ({ title }) => {
   return (
     <>
       <html lang="en" />

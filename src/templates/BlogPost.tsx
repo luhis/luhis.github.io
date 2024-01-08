@@ -10,7 +10,9 @@ import SEO from "../components/Head";
 import { Post } from "../types/types";
 import BlogTags from "../components/BlogTags";
 
-const BlogPost: FC<{ data: { markdownRemark: Post } }> = ({ data }) => {
+const BlogPost: FC<{ readonly data: { readonly markdownRemark: Post } }> = ({
+  data,
+}) => {
   const post = data.markdownRemark;
 
   return (

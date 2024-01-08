@@ -10,9 +10,9 @@ import { PostSummary } from "../types/types";
 
 export const Head = () => <SEO title="Matt McCorry's Blog Index" />;
 
-const Blog: React.FC<{ data: { blog: { posts: readonly PostSummary[] } } }> = ({
-  data,
-}) => {
+const Blog: React.FC<{
+  readonly data: { readonly blog: { readonly posts: readonly PostSummary[] } };
+}> = ({ data }) => {
   const { posts } = data.blog;
 
   return (
