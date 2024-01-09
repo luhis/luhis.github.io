@@ -9,6 +9,11 @@ const demoExamples = [
     description: "App to help removal of abandoned vehicles.",
   },
   {
+    title: "AutoTest App",
+    link: "https://mangaji-autotest.azurewebsites.net",
+    description: "Online AutoTest and AutoSolo app",
+  },
+  {
     title: "Tax Optimiser",
     link: "https://taxoptimiser.mccorry.dev/nationalInsuranceOptimiser/",
     description: "Optimise PAYE taxes using additional pension contributions",
@@ -17,7 +22,7 @@ const demoExamples = [
     title: "Rona",
     link: "https://lemon-island-041890d03.azurestaticapps.net",
     description:
-      "Mock NHS Covid tracking app.  It used to scan the poster QR codes and display a fake check-in screen.  Hope we don't need this one again!",
+      "Mock NHS Covid tracking app.  It used to scan the poster QR codes, decode the JWT token contained and display a fake check-in screen.  Hope we don't need this one again!",
   },
 ];
 
