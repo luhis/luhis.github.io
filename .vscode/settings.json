@@ -10,7 +10,9 @@
     "mccorry",
     "Nuget",
     "preact",
+    "prismjs",
     "Schroders",
+    "solarizedlight",
     "trunx"
   ],
   "typescript.tsdk": "node_modules\\typescript\\lib",
