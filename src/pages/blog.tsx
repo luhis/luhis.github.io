@@ -1,18 +1,15 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql, Link, PageProps } from "gatsby";
 import { Columns, Heading } from "react-bulma-components";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Head";
 import LeftCol from "../components/LeftCol";
 import BlogTags from "../components/BlogTags";
-import { PostSummary } from "../types/types";
 
 export const Head = () => <SEO title="Matt McCorry's Blog Index" />;
 
-const Blog: React.FC<{
-  readonly data: { readonly blog: { readonly posts: readonly PostSummary[] } };
-}> = ({ data }) => {
+const Blog: React.FC<PageProps<Queries.MyQueryQuery>> = ({ data }) => {
   const { posts } = data.blog;
 
   return (
@@ -25,13 +22,13 @@ const Blog: React.FC<{
           <Heading>Blog Posts</Heading>
           {posts.map(post => (
             <article key={post.id}>
-              <Link to={`/blog${post.fields.slug}`}>
-                <Heading>{post.frontmatter.title}</Heading>
+              <Link to={`/blog/${post.fields?.slug || ""}`}>
+                <Heading>{post.frontmatter?.title}</Heading>
                 <Heading subtitle>
-                  {post.frontmatter.author}, {post.frontmatter.date}
+                  {post.frontmatter?.author}, {post.frontmatter?.date}
                 </Heading>
               </Link>
-              <BlogTags tags={post.frontmatter.tags} />
+              <BlogTags tags={post.frontmatter?.tags || ""} />
               <p>{post.excerpt}</p>
             </article>
           ))}

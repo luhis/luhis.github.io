@@ -4,10 +4,10 @@ import { Columns, Content, Heading } from "react-bulma-components";
 
 import "prismjs/themes/prism-solarizedlight.css";
 
-import Layout from "../components/Layout";
-import LeftCol from "../components/LeftCol";
-import SEO from "../components/Head";
-import BlogTags from "../components/BlogTags";
+import Layout from "../../components/Layout";
+import LeftCol from "../../components/LeftCol";
+import SEO from "../../components/Head";
+import BlogTags from "../../components/BlogTags";
 
 const BlogPost: FC<PageProps<Queries.BlogQueryQuery>> = ({ data }) => {
   const post = data.markdownRemark;
@@ -37,8 +37,11 @@ const BlogPost: FC<PageProps<Queries.BlogQueryQuery>> = ({ data }) => {
 export default BlogPost;
 
 export const query = graphql`
-  query BlogQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogQuery($fields__slug: String!) {
+    markdownRemark(fields: { slug: { eq: $fields__slug } }) {
+      fields {
+        slug
+      }
       html
       frontmatter {
         date(fromNow: true)
