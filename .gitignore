@@ -68,4 +68,4 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-src/gatsby-types.d.ts
+#src/gatsby-types.d.ts
