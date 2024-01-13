@@ -6,16 +6,21 @@
  */
 
 import React from "react";
-import { Container } from "react-bulma-components";
+import { Button, Container } from "react-bulma-components";
+
+import CookieConsent from "./CookieConsent";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 const Layout: React.FC = ({ children }) => {
   return (
     <Container max>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <Button.Group>
+          <PrivacyPolicy />
+          <span>© {new Date().getFullYear()} Mangaji Lrd</span>
+        </Button.Group>
+        <CookieConsent />
       </footer>
     </Container>
   );

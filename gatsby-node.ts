@@ -22,3 +22,15 @@ export const onCreateNode: GatsbyNode<FileSystemNode>["onCreateNode"] = ({
     });
   }
 };
+
+export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] =
+  ({ actions }) => {
+    actions.createTypes(`
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      tags: String!
+    }
+  `);
+  };
