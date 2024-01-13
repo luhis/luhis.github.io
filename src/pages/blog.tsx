@@ -9,7 +9,7 @@ import BlogTags from "../components/BlogTags";
 
 export const Head = () => <SEO title="Matt McCorry's Blog Index" />;
 
-const Blog: React.FC<PageProps<Queries.MyQueryQuery>> = ({ data }) => {
+const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
   const { posts } = data.blog;
 
   return (
@@ -41,7 +41,7 @@ const Blog: React.FC<PageProps<Queries.MyQueryQuery>> = ({ data }) => {
 export default Blog;
 
 export const pageQuery = graphql`
-  query MyQuery {
+  query Blog {
     blog: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
     ) {

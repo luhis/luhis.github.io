@@ -3521,12 +3521,17 @@ type WebPOptions = {
   readonly quality: InputMaybe<Scalars['Int']>;
 };
 
-type BlogQueryQueryVariables = Exact<{
+type BlogQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type BlogQuery = { readonly blog: { readonly posts: ReadonlyArray<{ readonly excerpt: string | null, readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly author: string | null, readonly tags: string | null } | null }> } };
+
+type BlogPostQueryVariables = Exact<{
   fields__slug: Scalars['String'];
 }>;
 
 
-type BlogQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly author: string | null, readonly tags: string | null } | null } | null };
+type BlogPostQuery = { readonly markdownRemark: { readonly html: string | null, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly author: string | null, readonly tags: string | null } | null } | null };
 
 type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
 
@@ -3553,11 +3558,6 @@ type GatsbyImageSharpFluid_withWebp_noBase64Fragment = { readonly aspectRatio: n
 type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = { readonly tracedSVG: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null, readonly sizes: string };
 
 type GatsbyImageSharpFluidLimitPresentationSizeFragment = { readonly maxHeight: number, readonly maxWidth: number };
-
-type MyQueryQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type MyQueryQuery = { readonly blog: { readonly posts: ReadonlyArray<{ readonly excerpt: string | null, readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly author: string | null, readonly tags: string | null } | null }> } };
 
 
 }

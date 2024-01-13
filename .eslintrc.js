@@ -36,7 +36,7 @@ module.exports = {
     "no-implicit-globals": "error",
     "linebreak-style": ["error", "unix"],
     "react/react-in-jsx-scope": "off",
-    '@graphql-eslint/no-anonymous-operations': 'error',
+    "@graphql-eslint/no-anonymous-operations": "error",
   },
   settings: {
     react: {
@@ -52,12 +52,12 @@ module.exports = {
       },
     },
     {
-      "files": ["*.graphql"],
-      "parser": "@graphql-eslint/eslint-plugin",
-      "plugins": ["@graphql-eslint"],
-      "rules": {
-        "@graphql-eslint/known-type-names": "error"
-      }
-    }
+      files: ["*.graphql"],
+      parser: "@graphql-eslint/eslint-plugin",
+      plugins: ["@graphql-eslint"],
+      rules: {
+        "@graphql-eslint/known-type-names": "error",
+      },
+    },
   ],
 };

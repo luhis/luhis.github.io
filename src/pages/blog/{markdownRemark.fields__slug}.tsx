@@ -9,7 +9,7 @@ import LeftCol from "../../components/LeftCol";
 import SEO from "../../components/Head";
 import BlogTags from "../../components/BlogTags";
 
-const BlogPost: FC<PageProps<Queries.BlogQueryQuery>> = ({ data }) => {
+const BlogPost: FC<PageProps<Queries.BlogPostQuery>> = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
@@ -37,7 +37,7 @@ const BlogPost: FC<PageProps<Queries.BlogQueryQuery>> = ({ data }) => {
 export default BlogPost;
 
 export const query = graphql`
-  query BlogQuery($fields__slug: String!) {
+  query BlogPost($fields__slug: String!) {
     markdownRemark(fields: { slug: { eq: $fields__slug } }) {
       fields {
         slug
