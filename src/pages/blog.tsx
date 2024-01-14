@@ -22,13 +22,13 @@ const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
           <Heading>Blog Posts</Heading>
           {posts.map(post => (
             <article key={post.id}>
-              <Link to={`/blog/${post.fields?.slug || ""}`}>
-                <Heading>{post.frontmatter?.title}</Heading>
+              <Link to={`/blog/${post.fields.slug}`}>
+                <Heading>{post.frontmatter.title}</Heading>
                 <Heading subtitle>
-                  {post.frontmatter?.author}, {post.frontmatter?.date}
+                  {post.frontmatter.author}, {post.frontmatter.date}
                 </Heading>
               </Link>
-              <BlogTags tags={post.frontmatter?.tags || ""} />
+              <BlogTags tags={post.frontmatter.tags} />
               <p>{post.excerpt}</p>
             </article>
           ))}

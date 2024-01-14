@@ -37,6 +37,7 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     "react/react-in-jsx-scope": "off",
     "@graphql-eslint/no-anonymous-operations": "error",
+    "@typescript-eslint/no-unnecessary-condition": "error",
   },
   settings: {
     react: {

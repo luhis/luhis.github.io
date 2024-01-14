@@ -27,10 +27,16 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
   ({ actions }) => {
     actions.createTypes(`
     type MarkdownRemark implements Node {
-      frontmatter: Frontmatter
+      frontmatter: Frontmatter!
+      fields: Fields!
     }
     type Frontmatter {
+      author: String! @link # default foreign-key relation by id
+      title: String!
       tags: String!
+    }
+    type Fields {
+      slug: String!
     }
   `);
   };
