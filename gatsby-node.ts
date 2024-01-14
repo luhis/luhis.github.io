@@ -31,7 +31,7 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
       fields: Fields!
     }
     type Frontmatter {
-      author: String! @link # default foreign-key relation by id
+      author: String!
       title: String!
       tags: String!
     }
