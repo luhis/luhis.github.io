@@ -29,6 +29,7 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter!
       fields: Fields!
+      html: String!
     }
     type Frontmatter {
       author: String!

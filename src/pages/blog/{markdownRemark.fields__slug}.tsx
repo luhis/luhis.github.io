@@ -10,23 +10,23 @@ import SEO from "../../components/Head";
 import BlogTags from "../../components/BlogTags";
 
 const BlogPost: FC<PageProps<Queries.BlogPostQuery>> = ({ data }) => {
-  const post = data.markdownRemark;
+  const post = data.markdownRemark!;
 
   return (
     <Layout>
-      <SEO title={`Matt McCorry's Blog ${post?.frontmatter?.title}`} />
+      <SEO title={`Matt McCorry's Blog ${post.frontmatter.title}`} />
       <Columns>
         <Columns.Column size={3}>
           <LeftCol />
         </Columns.Column>
         <Columns.Column>
           <article>
-            <Heading size={3}>{post?.frontmatter?.title}</Heading>
-            <BlogTags tags={post?.frontmatter?.tags || ""} />
+            <Heading size={3}>{post.frontmatter.title}</Heading>
+            <BlogTags tags={post.frontmatter.tags || ""} />
             <Heading subtitle>
-              {post?.frontmatter?.author}, {post?.frontmatter?.date}
+              {post.frontmatter.author}, {post.frontmatter.date}
             </Heading>
-            <Content dangerouslySetInnerHTML={{ __html: post?.html || "" }} />
+            <Content dangerouslySetInnerHTML={{ __html: post.html || "" }} />
           </article>
         </Columns.Column>
       </Columns>
