@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://mccorry.dev/sitemap.xml
+Host: https://mccorry.dev
