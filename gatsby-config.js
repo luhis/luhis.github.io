@@ -1,3 +1,5 @@
+const siteUrl = process.env.URL || `https://mccorry.dev`;
+
 module.exports = {
   siteMetadata: {
     title: `McCorry.dev`,
@@ -7,6 +9,50 @@ module.exports = {
   },
   graphqlTypegen: true,
   plugins: [
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteUrl,
+        sitemap: siteUrl + '/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
+    // {
+    //   resolve: "gatsby-plugin-sitemap",
+    //   options: {
+    //     query: `
+    //     {
+    //       allSitePage {
+    //         nodes {
+    //           path
+    //         }
+    //       }
+    //     }
+    //   `,
+    //     resolveSiteUrl: () => siteUrl,
+    //     resolvePages: ({
+    //       allSitePage: { nodes: allPages },
+    //       allWpContentNode: { nodes: allWpNodes },
+    //     }) => {
+    //       const wpNodeMap = allWpNodes.reduce((acc, node) => {
+    //         const { uri } = node
+    //         acc[uri] = node
+
+    //         return acc
+    //       }, {})
+
+    //       return allPages.map(page => {
+    //         return { ...page, ...wpNodeMap[page.path] }
+    //       })
+    //     },
+    //     serialize: ({ path, modifiedGmt }) => {
+    //       return {
+    //         url: path,
+    //         lastmod: modifiedGmt,
+    //       }
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
