@@ -2,6 +2,7 @@ const siteUrl = process.env.URL || `https://mccorry.dev`;
 
 module.exports = {
   siteMetadata: {
+    siteUrl,
     title: `McCorry.dev`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@luhis`,
@@ -10,49 +11,14 @@ module.exports = {
   graphqlTypegen: true,
   plugins: [
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
         host: siteUrl,
-        sitemap: siteUrl + '/sitemap.xml',
-        policy: [{userAgent: '*', allow: '/'}]
-      }
+        sitemap: siteUrl + "/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
-    // {
-    //   resolve: "gatsby-plugin-sitemap",
-    //   options: {
-    //     query: `
-    //     {
-    //       allSitePage {
-    //         nodes {
-    //           path
-    //         }
-    //       }
-    //     }
-    //   `,
-    //     resolveSiteUrl: () => siteUrl,
-    //     resolvePages: ({
-    //       allSitePage: { nodes: allPages },
-    //       allWpContentNode: { nodes: allWpNodes },
-    //     }) => {
-    //       const wpNodeMap = allWpNodes.reduce((acc, node) => {
-    //         const { uri } = node
-    //         acc[uri] = node
-
-    //         return acc
-    //       }, {})
-
-    //       return allPages.map(page => {
-    //         return { ...page, ...wpNodeMap[page.path] }
-    //       })
-    //     },
-    //     serialize: ({ path, modifiedGmt }) => {
-    //       return {
-    //         url: path,
-    //         lastmod: modifiedGmt,
-    //       }
-    //     },
-    //   },
-    // },
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
