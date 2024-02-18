@@ -1,15 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import { Button, Container } from "react-bulma-components";
+import { Link } from "gatsby";
 
 import CookieConsent from "./CookieConsent";
-import PrivacyPolicy from "./PrivacyPolicy";
 
 const Layout: React.FC = ({ children }) => {
   return (
@@ -17,7 +10,7 @@ const Layout: React.FC = ({ children }) => {
       <main>{children}</main>
       <footer>
         <Button.Group>
-          <PrivacyPolicy />
+          <Link to="/privacyPolicy">Privacy Policy</Link>
           <span>© {new Date().getFullYear()} Mangaji Lrd</span>
         </Button.Group>
         <CookieConsent />
