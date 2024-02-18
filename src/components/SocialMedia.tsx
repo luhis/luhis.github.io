@@ -14,7 +14,7 @@ const SocialMedia: React.FC = () => (
   <React.Fragment>
     Social Media
     <Menu.List>
-      <Menu>
+      <Menu renderAs="nav">
         <a
           href="https://www.linkedin.com/in/matthew-mccorry/"
           className="icon-text"
@@ -22,22 +22,22 @@ const SocialMedia: React.FC = () => (
           <FaLinkedin /> matthew-mccorry
         </a>
       </Menu>
-      <Menu>
+      <Menu renderAs="nav">
         <a href="https://github.com/luhis" className="icon-text">
           <FaGithub /> luhis
         </a>
       </Menu>
-      <Menu>
+      <Menu renderAs="nav">
         <Link to="/blog" className="icon-text">
           <FaBlog /> Blog
         </Link>
       </Menu>
-      <Menu>
+      <Menu renderAs="nav">
         <Link to="/" className="icon-text">
           <FaGlobe /> Website
         </Link>
       </Menu>
-      <Menu>
+      <Menu renderAs="nav">
         <Link to="/demos" className="icon-text">
           <FaLaptop /> Demos
         </Link>
