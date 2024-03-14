@@ -7,9 +7,9 @@ const Contact: React.FC = () => (
     Contact
     <Menu.List>
       <Menu>
-        <div className="px-3 py-2">
+        <a href="tel:+447851326402" className="icon-text">
           <FaPhone /> +44 (0)7851 326 402
-        </div>
+        </a>
       </Menu>
       <Menu>
         <a href="mailto:mccorry@gmail.com" className="icon-text">
