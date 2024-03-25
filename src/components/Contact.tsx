@@ -17,7 +17,7 @@ const Contact: React.FC = () => (
         </a>
       </Menu>
       <Menu>
-        <div className="px-3 py-2">
+        <div className="menu-item">
           <FaHome /> Brighton, UK
         </div>
       </Menu>

@@ -6,13 +6,13 @@ const Hobbies: React.FC = () => (
     Hobbies
     <Menu.List>
       <Menu>
-        <div className="px-3 py-2">Electronics</div>
+        <div className="menu-item">Electronics</div>
       </Menu>
       <Menu>
-        <div className="px-3 py-2">Grass Autotest racing</div>
+        <div className="menu-item">Grass Autotest racing</div>
       </Menu>
       <Menu>
-        <div className="px-3 py-2">Ancient History</div>
+        <div className="menu-item">Ancient History</div>
       </Menu>
     </Menu.List>
   </React.Fragment>

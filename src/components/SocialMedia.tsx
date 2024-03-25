@@ -43,7 +43,7 @@ const SocialMedia: React.FC = () => (
         </Link>
       </Menu>
       <Menu>
-        <div className="px-3 py-2">
+        <div className="menu-item">
           <FaWalkieTalkie title="70cm, 2m, Meshtastic" /> M7ORY
         </div>
       </Menu>
