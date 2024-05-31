@@ -9707,12 +9707,10 @@ postcss@^8.2.15, postcss@^8.2.9, postcss@^8.3.11:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-preact-render-to-string@6.5.1:
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-6.5.1.tgz#ac648f4a8d18fd595c73b886af9e36fc774e6cb2"
-  integrity sha512-xCNopJmqdL6duI9MmlRglSrg+fhBkZDEYZdyRRTu2AivjFUHvtxJmzXQDtla01sMcsV/d1fi+TSIYRNydj2hFQ==
-  dependencies:
-    pretty-format "^3.8.0"
+preact-render-to-string@6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-6.5.3.tgz#ee7b20728ece579c3a093eb4022597bb004946dd"
+  integrity sha512-TWRSivNYMB3DMcFvrhwdGFkfSvPhUkd5r1q5q+1oQA21wnfEaxJe2X5U1BqLsuOA/v79sFRkg+qSeDkMHOqdvQ==
 
 preact@10.22.0:
   version "10.22.0"
@@ -9771,11 +9769,6 @@ pretty-error@^2.1.2:
   dependencies:
     lodash "^4.17.20"
     renderkid "^2.0.4"
-
-pretty-format@^3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-3.8.0.tgz#bfbed56d5e9a776645f4b1ff7aa1a3ac4fa3c385"
-  integrity sha1-v77VbV6ad2ZF9LH/eqGjrE+jw4U=
 
 prismjs@1.29.0:
   version "1.29.0"
