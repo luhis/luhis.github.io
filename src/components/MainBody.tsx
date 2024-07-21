@@ -33,8 +33,20 @@ const MainBody: React.FC = () => {
             <Media>
               <Media.Item>
                 <p>
+                  <strong>T Rowe Price</strong> <small>(Senior Developer)</small>{" "}
+                  <small>October 2022 - Present</small>
+                  <br />
+                  Worked to migrate legacy .net Framework banking applications to DotNetCore
+                </p>
+              </Media.Item>
+            </Media>
+          </Box>
+          <Box>
+            <Media>
+              <Media.Item>
+                <p>
                   <strong>Essensys</strong> <small>(Developer)</small>{" "}
-                  <small>July 2021 - Present</small>
+                  <small>July 2021 - September 2022</small>
                   <br />
                   Worked to maintain and add new features to a legacy office
                   management system. Technologies used: .Net Framework,
