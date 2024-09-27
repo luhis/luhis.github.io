@@ -9,7 +9,7 @@ const Hobbies: React.FC = () => (
         <div className="menu-item">Electronics</div>
       </Menu>
       <Menu>
-        <div className="menu-item">Grass Autotest racing</div>
+        <div className="menu-item">Autosolo racing</div>
       </Menu>
       <Menu>
         <div className="menu-item">Ancient History</div>
