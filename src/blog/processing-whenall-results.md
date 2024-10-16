@@ -80,3 +80,7 @@ DoThingWith2(t2Result);
 ```
 
 When using the deconstructor, we need to be careful that we don't missorder the results, as they will all be of the same type. Just make sure you put a unit test in to ensure the result mapping is correct.
+
+I was hoping the AST for the deconstructor would be interesting, but there isn't much to see:
+
+![WhenAll AST](./images/WhenAll.png)
