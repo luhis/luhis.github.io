@@ -33,10 +33,12 @@ const MainBody: React.FC = () => {
             <Media>
               <Media.Item>
                 <p>
-                  <strong>T Rowe Price</strong> <small>(Senior Developer)</small>{" "}
+                  <strong>T Rowe Price</strong>{" "}
+                  <small>(Senior Developer)</small>{" "}
                   <small>October 2022 - Present</small>
                   <br />
-                  Worked to migrate legacy .net Framework banking applications to DotNetCore
+                  Worked to migrate legacy .net Framework banking applications
+                  to DotNetCore
                 </p>
               </Media.Item>
             </Media>

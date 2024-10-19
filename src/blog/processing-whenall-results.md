@@ -48,7 +48,7 @@ var finalArray = (await Task.WhenAll(t1, t2)).SelectMany(a => a); // [1m, 2m]
 
 It is possible to create generic converters to convert `Task<Child>` to `Task<Parent>` to simplify dealing with inherited task results.
 
-In some cases, we want to process the results of the WhenAll individually.  In TypeScript, I would write something equivalent to:
+In some cases, we want to process the results of the WhenAll individually. In TypeScript, I would write something equivalent to:
 
 ```csharp
 var t1 = Task.Run(() => new[] { 1 });
