@@ -1,5 +1,5 @@
 ---
-title: octopus Saving Session Optimisation
+title: Octopus Saving Session Optimisation
 author: Matt McCorry
 date: 2023-11-17
 tags: Electricity,Utilities
