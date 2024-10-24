@@ -56,4 +56,6 @@ If we open the account on the last day of the month, make the first payment on t
 
 Total interest due: **£181.91**.
 
-Calculate the monthly interest with`=(((1+DailyInterestRate)^DATEDIF(LastMonthDate, TodayDate, "d"))-1)\*LastMonthTotal`
+Calculate the monthly interest with `=(((1+DailyInterestRate)^DATEDIF(LastMonthDate, TodayDate, "d"))-1)\*LastMonthTotal`
+
+Convert annual interest to daily with `((1+AnnualInterestRate)^(1/365))-1`
