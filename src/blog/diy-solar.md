@@ -20,17 +20,33 @@ There are three types of solar installations in the UK:
 - G98
   - Medium power installations, require notification to the grid. Payments for export.
 - Sub G98
-  - Low power (0.8Kw), [no notification required](https://forums.overclockers.co.uk/threads/solar-panels-and-battery-any-real-world-reccomendations.18946524/page-394). No payments for exports.
+  - Low power (0.8Kw), [no notification required](https://forums.overclockers.co.uk/threads/solar-panels-and-battery-any-real-world-reccomendations.18946524/page-394). No payments for exports, or [maybe we can](https://www.pluginsolar.co.uk/?p=9895) I will have a crack and update when I can.
 
 ## How much power can I generate?
 
 If we install 800w of inverter, we could in theory generate 0.8Kw for 12 hours a day, that would be 9.8Kwh. That might be a bit optimistic in sunny Brighton, but I have read of real life users getting 3Kwh a day on an 800w system. You can overpanel to get you closer to the full number, I plan on running 900w of panels with my 800w inverter. The limitation to overpaneling is that the open circuit voltage of the panels combined must be less than the input voltage limit of the inverter. Imagine you have no load on the system, the voltage of the panels will rise until it reaches the open circuit voltage, the inverter needs to cope with this.
 
+## How much power do I consume?
+
+Due to the nature of the way power works, it can be hard to work out how much of our consumption can be covered by the inverter.  The output power is limited, so consumption spikes will be served by the grid, but let's make the best measurements we can.
+
+### Instantaneous measurement
+
+A clamp meter is a great way to measure your consumption, but remember that it only shows the consumption at that instance.  Here is my reading in the morning, before m wife woke up, devices are on in the house, but not doing much yet:
+
+![Measurement](./images/ClampMeter.jpg)
+
+Roughly speaking, 0.95a at 245v is 233w.
+
+### Averaged measurements
+
+In January, I used 183.286kWh, this equates to an average of 246w over the course of the month (183.286/(31*24)).  Whilst I was away from my house with the desks switched off at the wall, I was using about 1.57kWh of electricity a day, or an average of 65w.
+
 ## Cost
 
 The most basic installation requires:
 
-- 800w solar panels. [£80 \* 2](https://www.bimblesolar.com/solar/large-panels/aiko-solar/Aiko-Neostar-2S-455W?sort=p.price&order=ASC)
+- 800w of solar panels. [£60 \* 2](https://www.cityplumbing.co.uk/p/dmegc-solar-450wp-full-black-n-type-bifacial-pv-module-dm450m10rt-b54hbb-l/p/120106)
 - 800w micro inverter. [£80](https://www.ebay.co.uk/itm/314669422202)
 - Mounting hardware. [£30](https://www.aliexpress.com/item/1005007481536619.html)
 - Minor wiring changes. £100
