@@ -33,7 +33,7 @@ const MainBody: React.FC = () => {
             <Media>
               <Media.Item>
                 <p>
-                  <strong>The People's Pension</strong>{" "}
+                  <strong>The People&apos;s Pension</strong>{" "}
                   <small>(Senior Developer)</small>{" "}
                   <small>November 2024 - Present</small>
                   <br />
