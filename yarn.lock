@@ -1326,10 +1326,10 @@
     parse-filepath "^1.0.2"
     tslib "~2.4.0"
 
-"@graphql-eslint/eslint-plugin@4.3.0":
-  version "4.3.0"
-  resolved "https://registry.npmjs.org/@graphql-eslint/eslint-plugin/-/eslint-plugin-4.3.0.tgz"
-  integrity sha512-9UTJfYNGAK5GuFapsNvA+508ke8YPc9Yt6mgT4Lc+gS18p53oG5wmXd3jdmNeVOfxhUefJcJbn925vIrjg/8/g==
+"@graphql-eslint/eslint-plugin@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@graphql-eslint/eslint-plugin/-/eslint-plugin-4.4.0.tgz#3c1d8f92c9b1466097d3311fda7c84cb0d7a6249"
+  integrity sha512-dhW6fpk3Souuaphhc38uMAGCcgKMgtCJWFygIKODw/Kns43wiQqRPVay0aNFY1JBx3aevn4KPT/BCOdm6HNncA==
   dependencies:
     "@graphql-tools/code-file-loader" "^8.0.0"
     "@graphql-tools/graphql-tag-pluck" "^8.3.4"
