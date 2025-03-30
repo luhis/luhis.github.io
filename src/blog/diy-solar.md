@@ -28,11 +28,11 @@ If we install 800w of inverter, we could in theory generate 0.8Kw for 12 hours a
 
 ## How much power do I consume?
 
-Due to the nature of the way power works, it can be hard to work out how much of our consumption can be covered by the inverter.  The output power is limited, so consumption spikes will be served by the grid, but let's make the best measurements we can.
+Due to the nature of the way power works, it can be hard to work out how much of our consumption can be covered by the inverter. The output power is limited, so consumption spikes will be served by the grid, but let's make the best measurements we can.
 
 ### Instantaneous measurement
 
-A clamp meter is a great way to measure your consumption, but remember that it only shows the consumption at that instance.  Here is my reading in the morning, before m wife woke up, devices are on in the house, but not doing much yet:
+A clamp meter is a great way to measure your consumption, but remember that it only shows the consumption at that instance. Here is my reading in the morning, before my wife woke up, devices are on in the house, but not doing much yet:
 
 ![Measurement](./images/ClampMeter.jpg)
 
@@ -40,7 +40,7 @@ Roughly speaking, 0.95a at 245v is 233w.
 
 ### Averaged measurements
 
-In January, I used 183.286kWh, this equates to an average of 246w over the course of the month (183.286/(31*24)).  Whilst I was away from my house with the desks switched off at the wall, I was using about 1.57kWh of electricity a day, or an average of 65w.
+In January, I used 183.286kWh, this equates to an average of 246w over the course of the month (183.286/(31\*24)). Whilst I was away from my house with the desks switched off at the wall, I was using about 1.57kWh of electricity a day, or an average of 65w.
 
 ## Cost
 
