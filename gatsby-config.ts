@@ -1,5 +1,5 @@
 const siteUrl = process.env.URL || `https://mccorry.dev`;
-
+// eslint-disable-next-line ts-immutable/immutable-data
 module.exports = {
   siteMetadata: {
     siteUrl,
