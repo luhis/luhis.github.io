@@ -58,10 +58,7 @@ const metas = (profileImage: IGatsbyImageData) => [
   },
   {
     name: "og:image",
-    content: profileImage.images
-      .sources![0].srcSet.split("\n")
-      .slice(-1)[0]
-      .split(" ")[0],
+    content: profileImage.images.sources![0].srcSet.split(" ")[0],
   },
 ];
 
@@ -70,7 +67,7 @@ const SEO: FunctionComponent<{ readonly title: string }> = ({ title }) => {
     {
       placeholderImage: file(relativePath: { eq: "profile.jpg" }) {
         childImageSharp {
-          gatsbyImageData(width: 300, layout: CONSTRAINED)
+          gatsbyImageData(width: 300, layout: FIXED)
         }
       }
     }
