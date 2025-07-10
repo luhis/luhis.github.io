@@ -58,7 +58,10 @@ const metas = (profileImage: IGatsbyImageData) => [
   },
   {
     name: "og:image",
-    content: profileImage.images.sources![0].srcSet.split(" ")[0],
+    content: profileImage.images
+      .sources![0].srcSet.split("\n")
+      .slice(-1)[0]
+      .split(" ")[0],
   },
 ];
 
