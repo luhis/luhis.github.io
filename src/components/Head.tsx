@@ -5,9 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import { graphql, useStaticQuery } from "gatsby";
 import React, { FunctionComponent } from "react";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
-const metas = [
+import { ImageData } from "../types/imageData";
+
+const metas = (profileImage: IGatsbyImageData) => [
   {
     name: `author`,
     content: "Matthew McCorry",
@@ -40,14 +44,40 @@ const metas = [
     name: `viewport`,
     content: "width=device-width, initial-scale=1",
   },
+  {
+    name: "og:url",
+    content: "mccorry.dev",
+  },
+  {
+    name: "og:title",
+    content: "Matt McCorry's Dev Site",
+  },
+  {
+    name: "og:description",
+    content: "Contract C# and TypeScript developer in Brighton, UK",
+  },
+  {
+    name: "og:image",
+    content: profileImage.images.sources![0].srcSet.split(" ")[0],
+  },
 ];
 
 const SEO: FunctionComponent<{ readonly title: string }> = ({ title }) => {
+  const data = useStaticQuery<ImageData>(graphql`
+    {
+      placeholderImage: file(relativePath: { eq: "profile.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(width: 300, layout: CONSTRAINED)
+        }
+      }
+    }
+  `);
+
   return (
     <>
       <html lang="en" />
       <title>{title}</title>
-      {metas.map(m => (
+      {metas(data.placeholderImage.childImageSharp.gatsbyImageData).map(m => (
         <meta
           key={m.name}
           property={m.property}
