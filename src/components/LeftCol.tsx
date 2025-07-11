@@ -1,30 +1,22 @@
 import React from "react";
 import { Hero, Heading, Container, Menu } from "react-bulma-components";
-import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 import Contact from "./Contact";
 import Hobbies from "./Hobbies";
 import SocialMedia from "./SocialMedia";
-import { ImageData } from "../types/imageData";
 
 const LeftCol: React.FC = () => {
-  const data = useStaticQuery<ImageData>(graphql`
-    {
-      placeholderImage: file(relativePath: { eq: "profile.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 300, layout: CONSTRAINED)
-        }
-      }
-    }
-  `);
   return (
     <Hero color="light" size="fullheight">
       <Hero.Header>
         <figure className="image">
-          <GatsbyImage
-            image={data.placeholderImage.childImageSharp.gatsbyImageData}
+          <StaticImage
+            src="../images/profile.jpg"
+            placeholder="blurred"
             alt="profile picture"
+            width={300}
+            layout="constrained"
           />
         </figure>
         <Heading>Matthew McCorry</Heading>
