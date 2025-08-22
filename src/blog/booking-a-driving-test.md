@@ -15,4 +15,4 @@ The first time I got in, I was a little late, about 6:15.  I spent ages going b
 
 ## Shunt Your Date with Testy
 
-Once you have a date booked, use (testi)[https://testi-app.co.uk] to move it to an earlier cancelled slot.
+Once you have a date booked, use [testi](https://testi-app.co.uk) to move it to an earlier cancelled slot.
