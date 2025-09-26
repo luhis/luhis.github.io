@@ -37,11 +37,12 @@ const MainBody: React.FC = () => {
                   <small>(Senior Developer)</small>{" "}
                   <small>November 2024 - Present</small>
                   <br />
-                  Developed a DotNetCore integration to the government Pension
-                  Dashboard using Service Bus, hosted on Azure. Collaborated
-                  with the test team on writing SpecFlow integration tests and
-                  created a test suite based on government schemas for seamless
-                  integration testing.
+                  Architected and implemented a .NET Core integration for the
+                  government Pension Dashboard, utilizing Azure Service Bus and
+                  hosted on Azure for robust, scalable connectivity. Partnered
+                  with the test team to develop SpecFlow integration tests and
+                  designed a comprehensive test suite aligned with government
+                  schemas, ensuring seamless and compliant integration.
                 </p>
               </Media.Item>
             </Media>
@@ -54,8 +55,13 @@ const MainBody: React.FC = () => {
                   <small>(Senior Developer)</small>{" "}
                   <small>October 2022 - November 2024</small>
                   <br />
-                  Worked to migrate legacy .net Framework banking applications
-                  to DotNetCore
+                  Developed and enhanced internal risk management applications,
+                  including a React-based job monitoring dashboard and a system
+                  for generating daily reports integrated with MSCI services.
+                  Leveraged AWS, Azure Service Bus, Azure Function Apps, React,
+                  TypeScript, and .NET Core to deliver scalable, efficient
+                  solutions, improving operational visibility and reporting
+                  accuracy.
                 </p>
               </Media.Item>
             </Media>
