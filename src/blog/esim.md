@@ -21,4 +21,4 @@ iPhones have had eSim built in since the 11, you would hope so at the price poin
 
 ## Ad Blocking
 
-The eSim data is cheap, but it's not as cheap as my standard Sim, so it's worth reminding that you can block out the ads with [nextDNS](https://nextdns.io/) privae DNS to save on some data, maybe use [NewPipe](https://newpipe.net/) too for YouTube so you can download videos over Wi-Fi.
+The eSim data is cheap, but it's not as cheap as my standard Sim, so it's worth reminding that you can block out the ads with [nextDNS](https://nextdns.io/) private DNS to save on some data, maybe use [NewPipe](https://newpipe.net/) too for YouTube so you can download videos over Wi-Fi.
