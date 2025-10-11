@@ -9,7 +9,7 @@ There are now cheap eSIM deals for international travel, but old phones and even
 
 ## eSIM modules
 
-They are like a SIM card, but are reprogrammable. You need to use an app to write to them, and not all of them are iPhone compatible, but once the SIM is programmed you don't need to do it again.
+They are like a SIM card, but are reprogrammable. You need to use an app to write to them, and not all of them are iPhone compatible, but once the SIM is programmed you don't need to do it again. They normally allow you to store many sim cards, up to 15, but you can only use one at a time. I suppose this could be handy if you only have a single SIM phone, then you could swap SIM without needing to eject the card.
 
 I have an old Xiaomi 11t, it has dual SIM.  One is my home card, the other is a [Switch SIM](https://a.aliexpress.com/_EyEM2Y4) I paid £15 for, other cards are available, but this was the cheapest at the time I was looking. There are cheaper options such as [this](https://a.aliexpress.com/_EyHsKwo) but i haven't tried it.
 
