@@ -9743,10 +9743,10 @@ postcss@^8.2.15, postcss@^8.2.9, postcss@^8.3.11, postcss@^8.4.24:
     picocolors "^1.0.1"
     source-map-js "^1.2.0"
 
-preact-render-to-string@6.6.2:
-  version "6.6.2"
-  resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-6.6.2.tgz#c0c5c1a0a8356fd0a4cab1cab575cddd520ba378"
-  integrity sha512-VJ++Pkzv6+ZOmeN/9Qvx0mRdXqnei1Lo3uu9bGvYHhoMI1VUkDT44hcpGbiokl/kuuYTayYa3yvmYTLZMplfMA==
+preact-render-to-string@6.6.3:
+  version "6.6.3"
+  resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-6.6.3.tgz#6dcacf0c0e39c676063d9f400593b65216bb636f"
+  integrity sha512-7oHG7jzjriqsFPkSPiPnzrQ0GcxFm6wOkYWNdStK5Ks9YlWSQQXKGBRAX4nKDdqX7HAQuRvI4pZNZMycK4WwDw==
 
 preact@10.27.2:
   version "10.27.2"
