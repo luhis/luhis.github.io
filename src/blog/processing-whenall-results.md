@@ -84,3 +84,5 @@ When using the deconstructor, we need to be careful that we don't missorder the 
 I was hoping the AST for the deconstructor would be interesting, but there isn't much to see:
 
 ![WhenAll AST](./images/WhenAll.png)
+
+Edit: I came across [this](https://steven-giesel.com/blogPost/d55cdae5-7294-40cc-a9d5-7552e092205e) alternative solution to allow for differing task types.
