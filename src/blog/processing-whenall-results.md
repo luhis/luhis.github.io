@@ -85,4 +85,43 @@ I was hoping the AST for the deconstructor would be interesting, but there isn't
 
 ![WhenAll AST](./images/WhenAll.png)
 
-Edit: I came across [this](https://steven-giesel.com/blogPost/d55cdae5-7294-40cc-a9d5-7552e092205e) alternative solution to allow for differing task types.
+**Edit:** I came across [this](https://steven-giesel.com/blogPost/d55cdae5-7294-40cc-a9d5-7552e092205e) alternative solution to allow for differing task types.
+
+My recursive solution inspired by the above blog:
+
+```csharp
+public class RecursiveTaskHelper
+{
+    public static RecursiveTaskHelper<T1, T2> StartWith<T1, T2>(Task<T1> left, Task<T2> right) =>
+        new RecursiveTaskHelper<T1, T2>(left, right);
+}
+public class RecursiveTaskHelper<T1, T2>(Task<T1> left, Task<T2> right)
+{
+    private readonly Task<object> Left = WrapTask(left);
+    private readonly Task<object> Right = WrapTask(right);
+
+    private static Task<object> WrapTask<T>(Task<T> task) =>
+        task.ContinueWith(t => (object)t.Result);
+
+    public RecursiveTaskHelper<(T1, T2), T3> And<T3>(Task<T3> t)
+    {
+        return new RecursiveTaskHelper<(T1, T2), T3>(WaitAllAsync(), t);
+    }
+
+    public async Task<(T1, T2)> WaitAllAsync()
+    {
+        var results = await Task.WhenAll(Left, Right);
+        return ((T1)results[0], (T2)results[1]);
+    }
+}
+```
+
+Usage:
+
+```csharp
+var ((resultOne, resultTwo), resultThree) = await RecursiveTaskHelper.StartWith(Task.FromResult("hi"), Task.FromResult(1))
+    .And(Task.FromResult(1.222m))
+    .WaitAllAsync();
+```
+
+It would also be possible to implement using a source generator, similar to [this](https://github.com/mcintyre321/OneOf/blob/master/OneOf.SourceGenerator/OneOfGenerator.cs).
