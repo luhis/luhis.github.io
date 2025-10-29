@@ -35,7 +35,8 @@ var finalArray = await Task.WhenAll(t1, t2); // Build error
 We can create a function to convert all the the Tasks to the same type, e.g. `Task<decimal[]>`
 
 ```csharp
-async Task<decimal[]> ToDecimal(Task<int[]> t) => (await t).Select(Convert.ToDecimal).ToArray();
+async Task<decimal[]> ToDecimal(Task<int[]> t) =>
+    (await t).Select(Convert.ToDecimal).ToArray();
 ```
 
 Giving us:
@@ -119,7 +120,8 @@ public class RecursiveTaskHelper<T1, T2>(Task<T1> left, Task<T2> right)
 Usage:
 
 ```csharp
-var ((resultOne, resultTwo), resultThree) = await RecursiveTaskHelper.StartWith(Task.FromResult("hi"), Task.FromResult(1))
+var ((resultOne, resultTwo), resultThree) =
+    await RecursiveTaskHelper.StartWith(Task.FromResult("hi"), Task.FromResult(1))
     .And(Task.FromResult(1.222m))
     .WaitAllAsync();
 ```
