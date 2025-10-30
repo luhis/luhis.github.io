@@ -13,7 +13,7 @@
 <div class="gatsby-highlight" data-language="csharp"><pre class="language-csharp"><code class="language-csharp"><span class="token class-name">IWebProxy</span> proxy <span class="token operator">=</span> WebRequest<span class="token punctuation">.</span><span class="token function">GetSystemWebProxy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 proxy<span class="token punctuation">.</span>Credentials <span class="token operator">=</span> CredentialCache<span class="token punctuation">.</span>DefaultCredentials<span class="token punctuation">;</span>
 HttpClient<span class="token punctuation">.</span>DefaultProxy <span class="token operator">=</span> proxy<span class="token punctuation">;</span></code></pre></div>
-<p>I put this into the constructor of my <code class="language-text">Startup</code> class. It works for me, I plan to remove the code once I'm done with debugging, but you could put a debug clause around it if you wanted to leave it there in production.</p>
+<p>I put this into the constructor of my <code class="language-csharp">Startup</code> class. It works for me, I plan to remove the code once I'm done with debugging, but you could put a debug clause around it if you wanted to leave it there in production.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
