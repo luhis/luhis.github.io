@@ -13,7 +13,7 @@ In the UK, it is common for banks to offer loss leader regular savings accounts.
 
 You can only pay in a set amount a month, so you could express the potential interest the average value of the account, multiplied by the interest rate, e.g.:
 
-`£250 * 6.5 * 0.104 = £169`
+`excel-formula¬£250 * 6.5 * 0.104 = £169`
 
 That works as an estimate, but the average value varies by when the account is opened, and when the deposit is made. Consider opening the account on the first of the month, and making the deposits on the first:
 
@@ -56,6 +56,6 @@ If we open the account on the last day of the month, make the first payment on t
 
 Total interest due: **£181.91**.
 
-Calculate the monthly interest with `=(((1+DailyInterestRate)^DATEDIF(LastMonthDate, TodayDate, "d"))-1)\*LastMonthTotal`
+Calculate the monthly interest with `excel-formula¬=(((1+DailyInterestRate)^DATEDIF(LastMonthDate, TodayDate, "d"))-1)\*LastMonthTotal`
 
-Convert annual interest to daily with `((1+AnnualInterestRate)^(1/365))-1`
+Convert annual interest to daily with `excel-formula¬((1+AnnualInterestRate)^(1/365))-1`

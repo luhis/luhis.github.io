@@ -47,7 +47,7 @@ var t2 = ToDecimal(Task.Run(() => new[] { 2 }));
 var finalArray = (await Task.WhenAll(t1, t2)).SelectMany(a => a); // [1m, 2m]
 ```
 
-It is possible to create generic converters to convert `Task<Child>` to `Task<Parent>` to simplify dealing with inherited task results.
+It is possible to create generic converters to convert `csharp¬Task<Child>` to `csharp¬Task<Parent>` to simplify dealing with inherited task results.
 
 In some cases, we want to process the results of the WhenAll individually. In TypeScript, I would write something equivalent to:
 
