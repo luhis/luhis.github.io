@@ -76,6 +76,13 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: `_blank`, // Opens links in a new tab
+              rel: `noopener noreferrer`, // Adds security attributes
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               // Class prefix for <pre> tags containing syntax highlighting;

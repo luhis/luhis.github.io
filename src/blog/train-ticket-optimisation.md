@@ -24,15 +24,16 @@ In order to determine the per trip cost of the tickets, we need to know how many
 ## What are the ticket options?
 
 Options these days (2023 prices, Brighton to London Bridge peak hours)
-| Ticket Type | Face Price | Cost Per Return Trip|
-| ------ | --- | --- |
-|Return Ticket|£50.10|£50.10|
-|Single Tickets on a Network Railcard|£43.15|£43.15|
-|Split Tickets on a Network Railcard|£38.65|£38.65|
-|Weekly Season ticket|£118.60|£23.75|
-|Carnet ticket|£350.70|£43.83|
-|Monthly Season ticket|£455.50|£21.02 (assumes 21.7 weekdays in a month, no allowance for bank holidays or holidays)|
-|Annual Season ticket|£4744.00|£18.25 (assuming 5 days a week every week) or £20.99 (assumes 226 trips a year)|
+
+| Ticket Type                          | Face Price | Cost Per Return Trip                                                                  |
+| ------------------------------------ | ---------- | ------------------------------------------------------------------------------------- |
+| Return Ticket                        | £50.10     | £50.10                                                                                |
+| Single Tickets on a Network Railcard | £43.15     | £43.15                                                                                |
+| Split Tickets on a Network Railcard  | £38.65     | £38.65                                                                                |
+| Weekly Season ticket                 | £118.60    | £23.75                                                                                |
+| Carnet ticket                        | £350.70    | £43.83                                                                                |
+| Monthly Season ticket                | £455.50    | £21.02 (assumes 21.7 weekdays in a month, no allowance for bank holidays or holidays) |
+| Annual Season ticket                 | £4744.00   | £18.25 (assuming 5 days a week every week) or £20.99 (assumes 226 trips a year)       |
 
 Eagle eyed readers will notice that the carnet ticket are about £5 a return more than buying a splitter on a railcard. There may be a case where they make sense, but not in the use case listed here.
 

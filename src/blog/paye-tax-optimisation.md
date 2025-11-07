@@ -70,10 +70,11 @@ Again this scenario is simplified, often employees will have a monthly salary sa
 This method becomes less efficient the higher the monthly income, as the employee must sacrifice more income at 2% in order to reach the 12% slice.
 
 Higher income, £140k/year, £20k pension sacrifice contribution
-| Method | Calculation | NI Due | Notes |
-| --- | ---|---|---|
-| Equal | 12 \* £605.12 =| **£7,261.48** | 12 months of £120,000 a year|
-|Variable | 10 \* £659.29 + 2 \* £82.04 =| **£6,756.98** | 10 months of £140,000 a year, 2 months of £20,000 a year|
+
+| Method   | Calculation                   | NI Due        | Notes                                                    |
+| -------- | ----------------------------- | ------------- | -------------------------------------------------------- |
+| Equal    | 12 \* £605.12 =               | **£7,261.48** | 12 months of £120,000 a year                             |
+| Variable | 10 \* £659.29 + 2 \* £82.04 = | **£6,756.98** | 10 months of £140,000 a year, 2 months of £20,000 a year |
 
 ## Summing Up
 

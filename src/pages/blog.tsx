@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql, Link, PageProps } from "gatsby";
-import { Columns, Heading } from "react-bulma-components";
+import { Columns, Form, Heading } from "react-bulma-components";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Head";
@@ -10,7 +10,15 @@ import BlogTags from "../components/BlogTags";
 export const Head = () => <SEO title="Matt McCorry's Blog Index" />;
 
 const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
-  const { posts } = data.blog;
+  const [filter, setFilter] = useState("");
+  const lowerFiler = filter.toLocaleLowerCase();
+  const posts = data.blog.posts.filter(({ frontmatter }) => {
+    return (
+      lowerFiler.length === 0 ||
+      frontmatter.tags.toLocaleLowerCase().includes(lowerFiler) ||
+      frontmatter.title.toLocaleLowerCase().includes(lowerFiler)
+    );
+  });
 
   return (
     <Layout>
@@ -20,6 +28,18 @@ const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
         </Columns.Column>
         <Columns.Column>
           <Heading>Blog Posts</Heading>
+          <Form.Field>
+            <Form.Label>Filter</Form.Label>
+
+            <Form.Control>
+              <Form.Input
+                placeholder="Filter"
+                type="search"
+                value={filter}
+                onChange={e => setFilter(e.target.value)}
+              />
+            </Form.Control>
+          </Form.Field>
           {posts.map(post => (
             <article key={post.id}>
               <Link to={`/blog/${post.fields.slug}`}>
