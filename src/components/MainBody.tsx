@@ -27,8 +27,7 @@ const MainBody: React.FC = () => {
               </Media.Item>
             </Media>
           </Box>
-          <Heading>Experience</Heading>
-          <Heading>Work</Heading>
+          <Heading>Work Experience</Heading>
           <Box>
             <Media>
               <Media.Item>
