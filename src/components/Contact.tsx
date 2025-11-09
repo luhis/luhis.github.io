@@ -1,6 +1,8 @@
 import React from "react";
 import { FaHome, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
+import { FaPersonDigging } from "react-icons/fa6";
 import { Menu } from "react-bulma-components";
+import { Link } from "gatsby";
 
 const Contact: React.FC = () => (
   <React.Fragment>
@@ -20,6 +22,11 @@ const Contact: React.FC = () => (
         <div className="menu-item">
           <FaHome /> Brighton, UK
         </div>
+      </Menu>
+      <Menu>
+        <Link to="/freelanceWorkContactForm" className="menu-item">
+          <FaPersonDigging /> Freelance Work
+        </Link>
       </Menu>
     </Menu.List>
   </React.Fragment>
