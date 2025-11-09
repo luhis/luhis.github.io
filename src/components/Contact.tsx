@@ -1,9 +1,8 @@
 import React from "react";
 import { FaHome, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
-import { FaPersonDigging } from "react-icons/fa6";
+import { FaPersonDigging, FaWalkieTalkie } from "react-icons/fa6";
 import { Menu } from "react-bulma-components";
 import { Link } from "gatsby";
-import { FaWalkieTalkie } from "react-icons/fa6";
 
 const Contact: React.FC = () => (
   <React.Fragment>
