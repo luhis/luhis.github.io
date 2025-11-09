@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
         <Button
           color="primary"
           renderAs="a"
-          href={"mailto:mccorry@gmail.com&subject=Freelance Request"}
+          href={"mailto:mccorry@gmail.com?subject=Freelance Request"}
         >
           Email me
         </Button>
