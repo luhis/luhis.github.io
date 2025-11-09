@@ -3,6 +3,7 @@ import { FaHome, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
 import { FaPersonDigging } from "react-icons/fa6";
 import { Menu } from "react-bulma-components";
 import { Link } from "gatsby";
+import { FaWalkieTalkie } from "react-icons/fa6";
 
 const Contact: React.FC = () => (
   <React.Fragment>
@@ -19,14 +20,19 @@ const Contact: React.FC = () => (
         </a>
       </Menu>
       <Menu>
-        <div className="menu-item">
-          <FaHome /> Brighton, UK
-        </div>
-      </Menu>
-      <Menu>
         <Link to="/freelanceWorkContactForm" className="menu-item">
           <FaPersonDigging /> Freelance Work
         </Link>
+      </Menu>
+      <Menu>
+        <a href="https://maps.google.com/?q=Brighton,UK" className="menu-item">
+          <FaHome /> Brighton, UK
+        </a>
+      </Menu>
+      <Menu>
+        <div className="menu-item">
+          <FaWalkieTalkie title="70cm, 2m, Meshtastic" /> M7ORY
+        </div>
       </Menu>
     </Menu.List>
   </React.Fragment>

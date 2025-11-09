@@ -7,13 +7,27 @@ import {
   FaGlobe,
   FaLaptop,
 } from "react-icons/fa";
-import { FaWalkieTalkie } from "react-icons/fa6";
 import { Menu } from "react-bulma-components";
 
 const SocialMedia: React.FC = () => (
   <React.Fragment>
     Social Media
     <Menu.List>
+      <Menu renderAs="nav">
+        <Link to="/" className="icon-text">
+          <FaGlobe /> Website
+        </Link>
+      </Menu>
+      <Menu renderAs="nav">
+        <Link to="/blog" className="icon-text">
+          <FaBlog /> Blog
+        </Link>
+      </Menu>
+      <Menu renderAs="nav">
+        <Link to="/demos" className="icon-text">
+          <FaLaptop /> Demos
+        </Link>
+      </Menu>
       <Menu renderAs="nav">
         <a
           href="https://www.linkedin.com/in/matthew-mccorry/"
@@ -26,26 +40,6 @@ const SocialMedia: React.FC = () => (
         <a href="https://github.com/luhis" className="icon-text">
           <FaGithub /> luhis
         </a>
-      </Menu>
-      <Menu renderAs="nav">
-        <Link to="/blog" className="icon-text">
-          <FaBlog /> Blog
-        </Link>
-      </Menu>
-      <Menu renderAs="nav">
-        <Link to="/" className="icon-text">
-          <FaGlobe /> Website
-        </Link>
-      </Menu>
-      <Menu renderAs="nav">
-        <Link to="/demos" className="icon-text">
-          <FaLaptop /> Demos
-        </Link>
-      </Menu>
-      <Menu>
-        <div className="menu-item">
-          <FaWalkieTalkie title="70cm, 2m, Meshtastic" /> M7ORY
-        </div>
       </Menu>
     </Menu.List>
   </React.Fragment>
