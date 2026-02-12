@@ -1,38 +1,53 @@
-const path = require("path");
-const { FlatCompat } = require("@eslint/eslintrc");
-const js = require("@eslint/js");
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  resolvePluginsRelativeTo: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
+const typescriptEslint = require("@typescript-eslint/eslint-plugin");
+const typescriptParser = require("@typescript-eslint/parser");
+const react = require("eslint-plugin-react");
+const reactHooks = require("eslint-plugin-react-hooks");
+const prettier = require("eslint-plugin-prettier");
+const tsImmutable = require("eslint-plugin-ts-immutable");
+const eslintConfigPrettier = require("eslint-config-prettier");
+const globals = require("globals");
 
 module.exports = [
-  ...compat.config({
-    env: {
-      browser: true,
-    },
-    plugins: ["@typescript-eslint", "ts-immutable"],
-    extends: [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:@typescript-eslint/recommended-requiring-type-checking",
-      "plugin:react/recommended",
-      "plugin:react-hooks/recommended",
-      "plugin:prettier/recommended",
-      "plugin:ts-immutable/recommended",
-    ],
-    parser: "@typescript-eslint/parser",
-    parserOptions: {
-      ecmaFeatures: {
-        jsx: true,
+  {
+    ignores: ["node_modules/**", "public/**", ".cache/**", "dist/**"],
+  },
+  {
+    files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+    languageOptions: {
+      parser: typescriptParser,
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+        project: "./tsconfig.json",
       },
-      project: "./tsconfig.json",
+      globals: {
+        ...globals.browser,
+      },
+    },
+    plugins: {
+      "@typescript-eslint": typescriptEslint,
+      react: react,
+      "react-hooks": reactHooks,
+      prettier: prettier,
+      "ts-immutable": tsImmutable,
+    },
+    settings: {
+      react: {
+        pragma: "h",
+        version: "detect",
+      },
     },
     rules: {
+      ...typescriptEslint.configs["eslint-recommended"].rules,
+      ...typescriptEslint.configs["recommended"].rules,
+      ...typescriptEslint.configs["recommended-requiring-type-checking"].rules,
+      ...react.configs["recommended"].rules,
+      ...reactHooks.configs["recommended"].rules,
+      ...prettier.configs["recommended"].rules,
+      ...tsImmutable.configs["recommended"].rules,
+      ...eslintConfigPrettier.rules,
+
       "react/no-unknown-property": ["error", { ignore: ["class"] }],
       "react/prop-types": ["off"],
       "@typescript-eslint/explicit-function-return-type": "off",
@@ -48,30 +63,12 @@ module.exports = [
       "no-implicit-globals": "error",
       "linebreak-style": ["error", "unix"],
       "react/react-in-jsx-scope": "off",
-      "@typescript-eslint/no-unnecessary-condition": "error",
     },
-    settings: {
-      react: {
-        pragma: "h",
-        version: "detect",
-      },
+  },
+  {
+    files: ["*.js"],
+    rules: {
+      "@typescript-eslint/explicit-function-return-type": "off",
     },
-    overrides: [
-      {
-        files: ["*.js"],
-        rules: {
-          "@typescript-eslint/explicit-function-return-type": "off",
-        },
-      },
-      {
-        files: ["*.graphql"],
-        parser: "@graphql-eslint/eslint-plugin",
-        plugins: ["@graphql-eslint"],
-        rules: {
-          "@graphql-eslint/no-anonymous-operations": "error",
-          "@graphql-eslint/known-type-names": "error",
-        },
-      },
-    ],
-  }),
+  },
 ];
