@@ -36,7 +36,9 @@ const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
                 placeholder="Filter"
                 type="search"
                 value={filter}
-                onChange={e => setFilter(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  setFilter(e.target.value)
+                }
               />
             </Form.Control>
           </Form.Field>

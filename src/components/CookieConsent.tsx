@@ -21,7 +21,7 @@ const Comp: React.FC = () => {
         .split(";")
         .filter(item => item.indexOf(`${cookieName}=`) >= 0).length > 0;
     if (!hasCookie) {
-      // eslint-disable-next-line ts-immutable/immutable-data
+      // eslint-disable-next-line functional/immutable-data
       document.cookie = `${cookieName}=1`;
     }
     setState({ showWarning: !hasCookie });

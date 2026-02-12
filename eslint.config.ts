@@ -1,13 +1,13 @@
-const typescriptEslint = require("@typescript-eslint/eslint-plugin");
-const typescriptParser = require("@typescript-eslint/parser");
-const react = require("eslint-plugin-react");
-const reactHooks = require("eslint-plugin-react-hooks");
-const prettier = require("eslint-plugin-prettier");
-const tsImmutable = require("eslint-plugin-ts-immutable");
-const eslintConfigPrettier = require("eslint-config-prettier");
-const globals = require("globals");
+import typescriptEslint from "@typescript-eslint/eslint-plugin";
+import typescriptParser from "@typescript-eslint/parser";
+import react from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
+import prettier from "eslint-plugin-prettier";
+import functional from "eslint-plugin-functional";
+import eslintConfigPrettier from "eslint-config-prettier";
+import globals from "globals";
 
-module.exports = [
+export default [
   {
     ignores: ["node_modules/**", "public/**", ".cache/**", "dist/**"],
   },
@@ -30,7 +30,7 @@ module.exports = [
       react: react,
       "react-hooks": reactHooks,
       prettier: prettier,
-      "ts-immutable": tsImmutable,
+      functional: functional,
     },
     settings: {
       react: {
@@ -45,7 +45,7 @@ module.exports = [
       ...react.configs["recommended"].rules,
       ...reactHooks.configs["recommended"].rules,
       ...prettier.configs["recommended"].rules,
-      ...tsImmutable.configs["recommended"].rules,
+      ...functional.configs["lite"].rules,
       ...eslintConfigPrettier.rules,
 
       "react/no-unknown-property": ["error", { ignore: ["class"] }],
@@ -63,6 +63,7 @@ module.exports = [
       "no-implicit-globals": "error",
       "linebreak-style": ["error", "unix"],
       "react/react-in-jsx-scope": "off",
+      "functional/no-return-void": "off",
     },
   },
   {
