@@ -7,7 +7,7 @@ import SEO from "../components/Head";
 import LeftCol from "../components/LeftCol";
 import FreelanceContact from "../components/FreelanceContact";
 
-export const Head = () => <SEO title="Matthew McCorry's Demos" />;
+export const Head = () => <SEO title="Contact Matthew McCorry" />;
 
 const UsingTypescript: React.FC = () => {
   return (
