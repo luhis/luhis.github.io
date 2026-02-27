@@ -12,11 +12,15 @@ export const Head = () => <SEO title="Matt McCorry's Blog Index" />;
 const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
   const [filter, setFilter] = useState("");
   const lowerFiler = filter.toLocaleLowerCase();
-  const posts = data.blog.posts.filter(({ frontmatter }) => {
+  const posts = data.blog.posts.filter(({ node }) => {
     return (
       lowerFiler.length === 0 ||
-      frontmatter.tags.toLocaleLowerCase().includes(lowerFiler) ||
-      frontmatter.title.toLocaleLowerCase().includes(lowerFiler)
+      node.childMarkdownRemark?.frontmatter.tags
+        .toLocaleLowerCase()
+        .includes(lowerFiler) ||
+      node.childMarkdownRemark?.frontmatter.title
+        .toLocaleLowerCase()
+        .includes(lowerFiler)
     );
   });
 
@@ -43,15 +47,20 @@ const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
             </Form.Control>
           </Form.Field>
           {posts.map(post => (
-            <article key={post.id}>
-              <Link to={`/blog/${post.fields.slug}`}>
-                <Heading>{post.frontmatter.title}</Heading>
+            <article key={post.node.id}>
+              <Link to={`/blog/${post.node.childMarkdownRemark?.fields.slug}`}>
+                <Heading>
+                  {post.node.childMarkdownRemark?.frontmatter.title}
+                </Heading>
                 <Heading subtitle>
-                  {post.frontmatter.author}, {post.frontmatter.date}
+                  {post.node.childMarkdownRemark?.frontmatter.author},{" "}
+                  {post.node.childMarkdownRemark?.frontmatter.date}
                 </Heading>
               </Link>
-              <BlogTags tags={post.frontmatter.tags} />
-              <p>{post.excerpt}</p>
+              <BlogTags
+                tags={post.node.childMarkdownRemark?.frontmatter.tags || ""}
+              />
+              <p>{post.node.childMarkdownRemark?.excerpt}</p>
             </article>
           ))}
         </Columns.Column>
@@ -64,19 +73,31 @@ export default Blog;
 
 export const pageQuery = graphql`
   query Blog {
-    blog: allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
-      posts: nodes {
-        fields {
-          slug
+    blog: allFile(
+      filter: {
+        sourceInstanceName: { eq: "blog" }
+        childMarkdownRemark: { excerpt: { ne: null } }
+      }
+      sort: { childMarkdownRemark: { frontmatter: { date: DESC } } }
+    ) {
+      posts: edges {
+        node {
+          id
+          sourceInstanceName
+          childMarkdownRemark {
+            fields {
+              slug
+            }
+            frontmatter {
+              author
+              date(fromNow: true)
+              tags
+              title
+            }
+            id
+            excerpt
+          }
         }
-        frontmatter {
-          date(fromNow: true)
-          title
-          author
-          tags
-        }
-        excerpt
-        id
       }
     }
   }

@@ -4,7 +4,7 @@ import { Columns } from "react-bulma-components";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Head";
-import MainBody from "../components/MainBody";
+import MainBody from "../components/CV";
 import LeftCol from "../components/LeftCol";
 
 export const Head = () => <SEO title="Matthew McCorry CV" />;
