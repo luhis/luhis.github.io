@@ -12,7 +12,7 @@ export const Head = () => <SEO title="Matt McCorry's Blog Index" />;
 const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
   const [filter, setFilter] = useState("");
   const lowerFiler = filter.toLocaleLowerCase();
-  const posts = data.blog.posts.filter(({ node }) => {
+  const posts = data.allFile.edges.filter(({ node }) => {
     return (
       lowerFiler.length === 0 ||
       node.childMarkdownRemark?.frontmatter.tags
@@ -73,17 +73,16 @@ export default Blog;
 
 export const pageQuery = graphql`
   query Blog {
-    blog: allFile(
+    allFile(
       filter: {
         sourceInstanceName: { eq: "blog" }
         childMarkdownRemark: { excerpt: { ne: null } }
       }
       sort: { childMarkdownRemark: { frontmatter: { date: DESC } } }
     ) {
-      posts: edges {
+      edges {
         node {
           id
-          sourceInstanceName
           childMarkdownRemark {
             fields {
               slug
@@ -94,7 +93,6 @@ export const pageQuery = graphql`
               tags
               title
             }
-            id
             excerpt
           }
         }

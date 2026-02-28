@@ -9,8 +9,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import React, { FunctionComponent } from "react";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 
-import { ImageData } from "../types/imageData";
-
 const metas = (profileImage: IGatsbyImageData) => [
   {
     name: `author`,
@@ -63,8 +61,8 @@ const metas = (profileImage: IGatsbyImageData) => [
 ];
 
 const SEO: FunctionComponent<{ readonly title: string }> = ({ title }) => {
-  const data = useStaticQuery<ImageData>(graphql`
-    {
+  const data = useStaticQuery<Queries.SEOQuery>(graphql`
+    query SEO {
       placeholderImage: file(relativePath: { eq: "profile.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 300, layout: FIXED)
@@ -77,7 +75,7 @@ const SEO: FunctionComponent<{ readonly title: string }> = ({ title }) => {
     <>
       <html lang="en" />
       <title>{title}</title>
-      {metas(data.placeholderImage.childImageSharp.gatsbyImageData).map(m => (
+      {metas(data.placeholderImage!.childImageSharp!.gatsbyImageData).map(m => (
         <meta
           key={m.name}
           property={m.property}

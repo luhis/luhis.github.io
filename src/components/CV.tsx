@@ -9,7 +9,7 @@ const MainBody: React.FC = () => {
         sourceInstanceName: { eq: "markdownComponents" }
         name: { eq: "cv" }
       ) {
-        childrenMarkdownRemark {
+        childMarkdownRemark {
           html
         }
       }
@@ -21,9 +21,9 @@ const MainBody: React.FC = () => {
       <Hero.Body>
         <Content
           dangerouslySetInnerHTML={{
-            __html: data?.file?.childrenMarkdownRemark?.[0]?.html || "",
+            __html: data?.file?.childMarkdownRemark?.html || "",
           }}
-        ></Content>
+        />
       </Hero.Body>
     </Hero>
   );

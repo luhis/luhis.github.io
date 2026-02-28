@@ -11,7 +11,7 @@ tags: Developer
 23 Dale Crescent, Brighton, BN1 8NT  
 British Citizenship, Irish Citizenship, South Korean F6 Visa eligible
 
-***
+---
 
 ## PERSONAL STATEMENT
 
