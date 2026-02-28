@@ -4,7 +4,7 @@ import { Columns } from "react-bulma-components";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Head";
-import MainBody from "../components/CV";
+import CV from "../components/CV";
 import LeftCol from "../components/LeftCol";
 
 export const Head = () => <SEO title="Matthew McCorry CV" />;
@@ -17,7 +17,7 @@ const UsingTypescript: React.FC = () => {
           <LeftCol />
         </Columns.Column>
         <Columns.Column>
-          <MainBody />
+          <CV />
         </Columns.Column>
       </Columns>
     </Layout>
