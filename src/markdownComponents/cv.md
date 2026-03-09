@@ -31,57 +31,59 @@ Expert .NET/C# Developer with 14+ years of hands-on experience building scalable
 **Senior Developer November 2024 – Present**  
 Peoples Pension – <https://thepeoplespension.co.uk> Crawley
 
-- Architected and delivered a scalable .NET Core integration for the government Pension Dashboard using Azure Service Bus.
+- Architected and delivered a scalable .NET Core integration for the government Pension Dashboard using Azure Functions and  Azure Service Bus.
 - Designed and implemented robust, compliant RESTful connectivity with comprehensive SpecFlow integration testing aligned to government schemas.
 - Focused on performance, reliability, and maintainability in a high-stakes financial environment.
+- Automated Azure infrastructure deployments using Bicep IaC for Service Bus namespaces, queues, and supporting resources, integrated with Azure DevOps pipelines for consistent, repeatable, and compliant provisioning in a regulated financial environment.
 
 **Senior Developer, Front Office November 2022 – November 2024**  
-T Rowe Price – <www.troweprice.com> London
+T Rowe Price – <https://www.troweprice.com> London
 
 - Developed and enhanced internal risk management applications for investment operations, including React/TypeScript dashboards and daily reporting integrated with MSCI services.
-- Built scalable back-end components using .NET Core, Azure Functions, Azure Service Bus, and AWS to improve real-time visibility and reporting accuracy in a banking/finance context.
+- Built scalable back-end components using .NET Core, AWS Functions, AWS SQS, and AWS to improve real-time visibility and reporting accuracy in a banking/finance context.
 - Handled async processing and data-driven workflows for high-volume financial data.
+- Deployed and managed serverless .NET Core components on AWS Lambda triggered by AWS SQS, with automated CI/CD deployments, CloudWatch monitoring for metrics/logs/alarms, and alerting to ensure high availability and real-time visibility into financial risk data processing.
 
 **Full Stack Developer August 2021 – September 2022**  
-Essenys – <www.essensys.tech> London
+Essenys – <https://www.essensys.tech> London
 
 Maintained and extended legacy .NET Framework office management system with new features and integrations (Stripe, GoCardless, Ezeep).
 
 **Front End Developer July 2020 – July 2021**  
-Auk Technologies – <www.auktechnology.com> London
+Auk Technologies – <https://www.auktechnology.com> London
 
 Contributed to financial trading platforms: legacy Vue 2 inflation trading system, Angular 2 gas trading platform, and greenfield React-based cryptocurrency trading system.
 
 **Back End Developer December 2019 – June 2020**  
-Mindshare (WPP) – <www.mindshareworld.com> London
+Mindshare (WPP) – <https://www.mindshareworld.com> London
 
 Developed microservices in an Agile environment mixing .NET Framework, .NET Core, and React/TypeScript UIs for large-scale internal marketing/finance-adjacent applications.
 
 **Senior Developer June 2019 – December 2019**  
-IQVIA – <www.iqvia.com> Brighton
+IQVIA – <https://www.iqvia.com> Brighton
 
 - Migrated legacy MVC applications to containerised .NET Core services with React front-ends.
 - Refactored brownfield codebases to modern standards, improving performance, maintainability, and delivery speed for querying large medical datasets.
 
 **Developer December 2016 – June 2019**  
-Benchmark Capital – <www.creative-technologies.co.uk> Brighton
+Benchmark Capital – <https://www.creative-technologies.co.uk> Brighton
 
 - Maintained legacy WebForms applications and led greenfield client portal project using React/TypeScript front-end, custom API, and Identity Server 4 authentication.
 - Implemented Service-Oriented Architecture with NServiceBus 6 for reliable messaging in financial services.
 - Pioneered company’s adoption of React/TypeScript with best practices for scalable, maintainable code.
 
 **Senior Developer January 2016 – December 2016**  
-Into University Partnerships – <www.intoglobal.com> Brighton
+Into University Partnerships – <https://www.intoglobal.com> Brighton
 
 React/Angular + Django for E-Learning tools.
 
 **Developer January 2015 – December 2015**  
-TLM Nexus – <www.tlmnexus.com> Brighton
+TLM Nexus – <https://www.tlmnexus.com> Brighton
 
 Rewrote legacy WebForms military system to modular MVC.
 
 **Project Engineer February 2011 – December 2015**  
-Gendis – <www.gendis.co.uk> Brighton
+Gendis – <https://www.gendis.co.uk> Brighton
 
 Built MVC 3/IoT/cloud access control system on AWS with MQTT.
 
@@ -89,7 +91,7 @@ Built MVC 3/IoT/cloud access control system on AWS with MQTT.
 Seoul, South Korea
 
 **Junior Developer June 2006 – June 2007**  
-Gabriel Scientific – <www.gabriel.co.uk> Manchester
+Gabriel Scientific – <https://www.gabriel.co.uk> Manchester
 
 ## EDUCATION
 
