@@ -25,9 +25,9 @@
     "preact": "10.29.0",
     "preact-render-to-string": "6.6.7",
     "prismjs": "1.30.0",
-    "react": "19.2.4",
+    "react": "19.2.5",
     "react-bulma-components": "4.1.0",
-    "react-dom": "19.2.4",
+    "react-dom": "19.2.5",
     "react-icons": "5.4.0",
     "typescript": "6.0.2"
   },
