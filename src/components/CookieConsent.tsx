@@ -14,18 +14,23 @@ interface Props {
 const cookieName = "accepted-cookies";
 
 const Comp: React.FC = () => {
-  const [state, setState] = React.useState<Props>({ showWarning: false });
-  React.useEffect(() => {
+  const [state] = React.useState<Props>(() => {
+    if (typeof document === "undefined") {
+      return { showWarning: false };
+    }
+
     const hasCookie =
       document.cookie
         .split(";")
         .filter(item => item.indexOf(`${cookieName}=`) >= 0).length > 0;
-    if (!hasCookie) {
+    return { showWarning: !hasCookie };
+  });
+  React.useEffect(() => {
+    if (typeof document !== "undefined" && state.showWarning) {
       // eslint-disable-next-line functional/immutable-data
       document.cookie = `${cookieName}=1`;
     }
-    setState({ showWarning: !hasCookie });
-  }, []);
+  }, [state.showWarning]);
   return state.showWarning ? <F /> : null;
 };
 
