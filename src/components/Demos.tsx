@@ -24,6 +24,12 @@ const demoExamples = [
     description:
       "Mock NHS Covid tracking app.  It used to scan the poster QR codes, decode the JWT token contained and display a fake check-in screen.  Hope we don't need this one again!",
   },
+  {
+    title: "Borrow my Clubcard",
+    link: "https://borrowmyclubcard.mccorry.dev",
+    description:
+      "Access membership discounts in supermarkets without sharing your account details.",
+  },
 ];
 
 const Contact: React.FC = () => (
