@@ -1,4 +1,7 @@
 {
   "extends": ["config:base", "group:definitelyTyped", "group:linters"],
-  "postUpdateOptions": ["yarnDedupeHighest"]
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "automerge": true,
+  "automergeType": "branch",
+  "schedule": ["after 1am and before 2am"]
 }
