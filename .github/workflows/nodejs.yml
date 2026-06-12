@@ -11,6 +11,10 @@ on:
 env:
   CI: true
 
+concurrency:
+  group: nodejs-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
 
@@ -26,6 +30,7 @@ jobs:
       uses: actions/setup-node@v6
       with:
         node-version: ${{ matrix.node-version }}
+        cache: yarn
     - run: yarn install --frozen-lockfile
     - run: yarn lint
     - run: yarn type-check
