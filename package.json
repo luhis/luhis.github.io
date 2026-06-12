@@ -57,6 +57,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -b built-pages",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --cache --cache-location .eslintcache --fix",
     "type-check": "tsc --noEmit"
   },
   "repository": {
