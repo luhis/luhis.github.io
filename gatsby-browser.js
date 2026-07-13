@@ -7,4 +7,3 @@
 // You can delete this file if you're not using it
 
 import "bulma/css/bulma.css";
-import "./src/styles/global.css";

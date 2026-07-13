@@ -1,4 +1,3 @@
-// If you don't want to use TypeScript you can delete this file!
 import React from "react";
 import { Columns } from "react-bulma-components";
 
@@ -9,7 +8,7 @@ import Demos from "../components/Demos";
 
 export const Head = () => <SEO title="Matthew McCorry's Demos" />;
 
-const UsingTypescript: React.FC = () => {
+const DemosPage: React.FC = () => {
   return (
     <Layout>
       <Columns>
@@ -24,4 +23,4 @@ const UsingTypescript: React.FC = () => {
   );
 };
 
-export default UsingTypescript;
+export default DemosPage;

@@ -65,9 +65,6 @@ module.exports = {
         publisherId: `ca-pub-9088197012476861`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     `gatsby-plugin-preact`,
     {
       resolve: `gatsby-transformer-remark`,

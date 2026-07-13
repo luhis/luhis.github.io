@@ -1,6 +1,6 @@
 import React from "react";
 
-const F: React.FC = () => (
+const ConsentMessage: React.FC = () => (
   <p>
     This website uses cookies. By continuing to use our site, you agree to our
     use of cookies.
@@ -13,7 +13,7 @@ interface Props {
 
 const cookieName = "accepted-cookies";
 
-const Comp: React.FC = () => {
+const CookieConsent: React.FC = () => {
   const [state] = React.useState<Props>(() => {
     if (typeof document === "undefined") {
       return { showWarning: false };
@@ -31,7 +31,7 @@ const Comp: React.FC = () => {
       document.cookie = `${cookieName}=1`;
     }
   }, [state.showWarning]);
-  return state.showWarning ? <F /> : null;
+  return state.showWarning ? <ConsentMessage /> : null;
 };
 
-export default Comp;
+export default CookieConsent;
