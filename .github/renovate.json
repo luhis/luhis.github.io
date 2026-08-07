@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base", "group:definitelyTyped", "group:linters"],
+  "extends": ["config:recommended", "group:definitelyTyped", "group:linters"],
   "postUpdateOptions": ["yarnDedupeHighest"],
   "automerge": true,
   "automergeType": "branch",
