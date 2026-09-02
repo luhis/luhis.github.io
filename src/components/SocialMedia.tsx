@@ -1,12 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaBlog,
-  FaGlobe,
-  FaLaptop,
-} from "react-icons/fa";
 import { Menu } from "react-bulma-components";
 
 const SocialMedia: React.FC = () => (
@@ -15,17 +8,17 @@ const SocialMedia: React.FC = () => (
     <Menu.List>
       <Menu renderAs="nav">
         <Link to="/" className="icon-text">
-          <FaGlobe /> Website
+          🌐 Website
         </Link>
       </Menu>
       <Menu renderAs="nav">
         <Link to="/blog" className="icon-text">
-          <FaBlog /> Blog
+          ✍️ Blog
         </Link>
       </Menu>
       <Menu renderAs="nav">
         <Link to="/demos" className="icon-text">
-          <FaLaptop /> Demos
+          💻 Demos
         </Link>
       </Menu>
       <Menu renderAs="nav">
@@ -33,12 +26,12 @@ const SocialMedia: React.FC = () => (
           href="https://www.linkedin.com/in/matthew-mccorry/"
           className="icon-text"
         >
-          <FaLinkedin /> matthew-mccorry
+          🔗 matthew-mccorry
         </a>
       </Menu>
       <Menu renderAs="nav">
         <a href="https://github.com/luhis" className="icon-text">
-          <FaGithub /> luhis
+          🐙 luhis
         </a>
       </Menu>
     </Menu.List>

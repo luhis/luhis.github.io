@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Section } from "react-bulma-components";
-import { FaLink } from "react-icons/fa6";
 
 const demoExamples = [
   {
@@ -40,7 +39,7 @@ const Contact: React.FC = () => (
           <Card.Header>
             <Card.Header.Title>{d.title}</Card.Header.Title>
             <Card.Header.Icon renderAs="a" href={d.link} target="_blank">
-              <FaLink />{" "}
+              🔗
             </Card.Header.Icon>
           </Card.Header>
           <Card.Content>{d.description}</Card.Content>

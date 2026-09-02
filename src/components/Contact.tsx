@@ -1,6 +1,4 @@
 import React from "react";
-import { FaHome, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
-import { FaPersonDigging, FaWalkieTalkie } from "react-icons/fa6";
 import { Menu } from "react-bulma-components";
 import { Link } from "gatsby";
 
@@ -10,28 +8,26 @@ const Contact: React.FC = () => (
     <Menu.List>
       <Menu>
         <a href="tel:+447851326402" className="icon-text">
-          <FaPhone /> +44 (0)7851 326 402
+          📞 +44 (0)7851 326 402
         </a>
       </Menu>
       <Menu>
         <a href="mailto:mccorry@gmail.com" className="icon-text">
-          <FaEnvelopeOpen /> mccorry@gmail.com
+          ✉️ mccorry@gmail.com
         </a>
       </Menu>
       <Menu>
         <Link to="/freelanceWorkContactForm" className="menu-item">
-          <FaPersonDigging /> Freelance Work
+          🔨 Freelance Work
         </Link>
       </Menu>
       <Menu>
         <a href="https://maps.google.com/?q=Brighton,UK" className="menu-item">
-          <FaHome /> Brighton, UK
+          🏠 Brighton, UK
         </a>
       </Menu>
       <Menu>
-        <div className="menu-item">
-          <FaWalkieTalkie title="70cm, 2m, Meshtastic" /> M7ORY
-        </div>
+        <div className="menu-item">📻 M7ORY</div>
       </Menu>
     </Menu.List>
   </React.Fragment>
