@@ -6,6 +6,7 @@ import prettier from "eslint-plugin-prettier";
 import functional from "eslint-plugin-functional";
 import eslintConfigPrettier from "eslint-config-prettier";
 import globals from "globals";
+import { fixupPluginRules } from "@eslint/compat";
 
 export default [
   {
@@ -27,15 +28,15 @@ export default [
     },
     plugins: {
       "@typescript-eslint": typescriptEslint,
-      react: react,
-      "react-hooks": reactHooks,
+      react: fixupPluginRules(react),
+      "react-hooks": fixupPluginRules(reactHooks),
       prettier: prettier,
       functional: functional,
     },
     settings: {
       react: {
         pragma: "h",
-        version: "detect",
+        version: "19",
       },
     },
     rules: {

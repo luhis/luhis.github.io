@@ -29,7 +29,7 @@ const PrivacyPolicy: React.FC = () => {
               <a
                 href="https://www.termsfeed.com/privacy-policy-generator/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Privacy Policy Generator
               </a>
@@ -211,7 +211,7 @@ const PrivacyPolicy: React.FC = () => {
               <a
                 href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 TermsFeed website
               </a>{" "}
