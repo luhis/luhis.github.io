@@ -6,8 +6,8 @@
  */
 
 import { graphql, useStaticQuery } from "gatsby";
-import React, { FunctionComponent } from "react";
-import { IGatsbyImageData } from "gatsby-plugin-image";
+import React, { type FunctionComponent } from "react";
+import type { IGatsbyImageData } from "gatsby-plugin-image";
 
 const metas = (profileImage: IGatsbyImageData) => [
   {

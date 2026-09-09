@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { PageProps, graphql } from "gatsby";
+import React, { type FC } from "react";
+import { graphql, type PageProps } from "gatsby";
 import { Columns, Content, Heading } from "react-bulma-components";
 
 import "prismjs/themes/prism-solarizedlight.css";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { graphql, Link, PageProps } from "gatsby";
+import { graphql, Link, type PageProps } from "gatsby";
 import { Columns, Form, Heading } from "react-bulma-components";
 
 import Layout from "../components/Layout";

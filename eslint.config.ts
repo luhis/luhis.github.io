@@ -57,6 +57,7 @@ export default [
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
       "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/consistent-type-imports": "error",
       "no-duplicate-imports": "error",
       "no-shadow": "off",
       "@typescript-eslint/no-shadow": ["error"],

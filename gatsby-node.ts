@@ -1,5 +1,5 @@
-import { GatsbyNode } from "gatsby";
-import { FileSystemNode, createFilePath } from "gatsby-source-filesystem";
+import type { GatsbyNode } from "gatsby";
+import { type FileSystemNode, createFilePath } from "gatsby-source-filesystem";
 
 export const onCreateNode: GatsbyNode<FileSystemNode>["onCreateNode"] = ({
   node,
