@@ -25,9 +25,9 @@
     "preact": "10.29.8",
     "preact-render-to-string": "6.7.0",
     "prismjs": "1.30.0",
-    "react": "19.2.8",
+    "react": "19.3.0",
     "react-bulma-components": "4.1.0",
-    "react-dom": "19.2.8"
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
     "@eslint/compat": "^2.1.1",
