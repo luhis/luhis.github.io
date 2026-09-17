@@ -48,6 +48,9 @@
   "keywords": [
     "gatsby"
   ],
+  "resolutions": {
+    "lmdb": "3.5.2"
+  },
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
