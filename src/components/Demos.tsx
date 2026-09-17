@@ -3,6 +3,16 @@ import { Card, Section } from "react-bulma-components";
 
 const demoExamples = [
   {
+    title: "Timing App Lite",
+    link: "https://timingapplite.mccorry.dev",
+    description: "A lightweight timing app, replacement for Timing App Live.",
+  },
+  {
+    title: "AutoSolo Tracking",
+    link: "https://autosolotracking.mccorry.dev",
+    description: "Track AutoSolo events and results.",
+  },
+  {
     title: "Abandoned Car Removal",
     link: "https://abandoned.mccorry.dev",
     description: "App to help removal of abandoned vehicles.",
