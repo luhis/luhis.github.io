@@ -1827,40 +1827,40 @@
   dependencies:
     "@lezer/common" "^0.15.0"
 
-"@lmdb/lmdb-darwin-arm64@3.5.6":
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-darwin-arm64/-/lmdb-darwin-arm64-3.5.6.tgz#81ab45551e1d839dc709bdf24ca133cfb52ccfb4"
-  integrity sha512-mY5FG4TjPAkY4P0w+OhHaUka5mDh2TX2WKYIwuKzJ1zeW3VvRgxdam/lGJTquI+bthTx5CSHDW+BAQCnNAzkEA==
+"@lmdb/lmdb-darwin-arm64@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-darwin-arm64/-/lmdb-darwin-arm64-3.5.7.tgz#1b3b3a81d446a6a6123ba82e9af0a5d875be15c9"
+  integrity sha512-Y0CUvoj3ToaPQGdiqtodR0yrbAToNV74ylGQGSsNzmACO6iqKIUdU2OyFhkB+AAYpyfCA6oYh8hxbtc7eZhklA==
 
-"@lmdb/lmdb-darwin-x64@3.5.6":
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-darwin-x64/-/lmdb-darwin-x64-3.5.6.tgz#ce7577fd38136c61f3b346b520cb3af299bc0f54"
-  integrity sha512-foa+pwitysO8k+xhs7psBFfTKnVgR69NlZRRTHaFVDqphh7AdGpLeyRzKw/ofatr/sN6TiHRRW6mmop0ZrrppQ==
+"@lmdb/lmdb-darwin-x64@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-darwin-x64/-/lmdb-darwin-x64-3.5.7.tgz#291c3588d18b0b7de48cdc79311114742bd398c0"
+  integrity sha512-6WBLAMJxEJU7mhqvGmajtr9DKljh8Gd3uw4seeCnBLHsOsTOFZQ3evREZPiaz//wVamR/m9pFeexJZqWn6epfA==
 
-"@lmdb/lmdb-linux-arm64@3.5.6":
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-linux-arm64/-/lmdb-linux-arm64-3.5.6.tgz#2ffb1710ef0547f8de40d50c5ada6d1895923797"
-  integrity sha512-HmiyFFdJa38s1heCMSooSPaBSFTHJ3C+ERPp28xAPlDX1YiALJVOgbry065nXd8Y7KISWjnw05zpG1RX8IfftA==
+"@lmdb/lmdb-linux-arm64@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-linux-arm64/-/lmdb-linux-arm64-3.5.7.tgz#27a86b4f5b130da2ed6405a4871ded56a53c12d0"
+  integrity sha512-Lt+Iu1FY4zfxEI35WnjvfyF5tC7r4jif6lcujjBsdyyCPtzJorPFCu983tGmroqo2yyBPhOzKFq9r1BFfuDO+Q==
 
-"@lmdb/lmdb-linux-arm@3.5.6":
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-linux-arm/-/lmdb-linux-arm-3.5.6.tgz#a480c7fac3769a1b71337702cd6c938b300a8599"
-  integrity sha512-QR4YRyR5h5Z8eGXrNQjiyo2NNDfqi3tCc9dQG5Is1blCt+qWw1ZoBWhlWAr5d+jshkifMIJjVHzHGKbkKzF8Tw==
+"@lmdb/lmdb-linux-arm@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-linux-arm/-/lmdb-linux-arm-3.5.7.tgz#566e7af29cc8e614adaefd2b561a71dc20d375d9"
+  integrity sha512-G7S80aRTbTwJ8b2HvnPu6aUQHqylKrThp7RjFtqpsicozHN8YBm/tGM0GOJTk/e2XKc1ohTB3nke6fi6BZSPjA==
 
-"@lmdb/lmdb-linux-x64@3.5.6":
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-linux-x64/-/lmdb-linux-x64-3.5.6.tgz#6b50738a5d779fe090ce1ab7bfb41a9c88ea92f3"
-  integrity sha512-ADzCuCF2cTNiX9kDScqcz1fjnAkxPpQNneV3KFTdV3wWtVlI2sTGzySoMTgDpinkMMFj1NTJlxA6XR8fwc4hlA==
+"@lmdb/lmdb-linux-x64@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-linux-x64/-/lmdb-linux-x64-3.5.7.tgz#5e60fa59fe827fa807d7a785a97455d7e07cd50a"
+  integrity sha512-9wv08LC1zp9JNxOegfNIwvL1AScx+EM8+hJF52uZl+CbwlYV24NdFibB+Jn8ZvOxCqqDGOUZfy0+XQ3qd3cuQQ==
 
-"@lmdb/lmdb-win32-arm64@3.5.6":
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-win32-arm64/-/lmdb-win32-arm64-3.5.6.tgz#5a5872d6a275bfa8d4423d78906f7202ec352c97"
-  integrity sha512-J7A9aEQsQiv0TYtBGL7NDIPp2lOS8nnl+zm4sWZm1xlsTTaQ4PgD096Adzdrk27rw3UxCkDXdCUa4ax41oztBQ==
+"@lmdb/lmdb-win32-arm64@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-win32-arm64/-/lmdb-win32-arm64-3.5.7.tgz#5a18b42c15943780502d3bdd4ea409b5301895f2"
+  integrity sha512-+qU4H80gI3OiWcka+2wDZ/KV89ZKKfvWz9aAZ64WYMhczPsn7BQqYvI5by/AdOcWSQL1tT0LLwmVM3QIbubwqQ==
 
-"@lmdb/lmdb-win32-x64@3.5.6":
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-win32-x64/-/lmdb-win32-x64-3.5.6.tgz#8e26cbb62abb1454130fe73bd475df3b24a97567"
-  integrity sha512-1g7G0knRX2iV/voDu54yxrGqw5Dk0w2oIYb7dgJq8IkOi+m7wbD8Q3QpPFjh0C01G58S88dqGn03len6UPCXsg==
+"@lmdb/lmdb-win32-x64@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@lmdb/lmdb-win32-x64/-/lmdb-win32-x64-3.5.7.tgz#64a204f37d76ace7f6a0a5fe56c8faabee23b653"
+  integrity sha512-iKT8EOWsWFihWe8UdUFAVfd6tvqACY9UC76f3MbkgPFEzMaKG2QUwWXP9GZibEeBCHajXf0nigKLrlFIsjYm3g==
 
 "@mdn/browser-compat-data@^5.6.19":
   version "5.7.6"
@@ -8365,10 +8365,10 @@ linkfs@^2.1.0:
   resolved "https://registry.npmjs.org/linkfs/-/linkfs-2.1.0.tgz"
   integrity sha512-kmsGcmpvjStZ0ATjuHycBujtNnXiZR28BTivEu0gAMDTT7GEyodcK6zSRtu6xsrdorrPZEIN380x7BD7xEYkew==
 
-lmdb@2.5.2, lmdb@2.5.3, lmdb@3.5.6:
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/lmdb/-/lmdb-3.5.6.tgz#c45d2d40f65f91770d45dccbba8dba7f422a5388"
-  integrity sha512-j3uE8ReKNyUWDjhfEFSJqE/1DLtfTR5Z8yFzVHvBjAk37wNg7HdScjcv8ttPHRvrdgPQMPWxFFI0SsdBzI5lBw==
+lmdb@2.5.2, lmdb@2.5.3, lmdb@3.5.7:
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/lmdb/-/lmdb-3.5.7.tgz#eb18ecfbd114ca426bd6aa719ccf329461eeb11d"
+  integrity sha512-cSXt4RnfRAaGRXVI3hiJS3fQPQebj/c7RCRBvUL2cH5gTLpgvuGFqGJbH+ZkI2sFgvSlzwJw3GTw6ffFmN/uUw==
   dependencies:
     "@harperfast/extended-iterable" "^1.0.3"
     msgpackr "^1.11.2"
@@ -8377,13 +8377,13 @@ lmdb@2.5.2, lmdb@2.5.3, lmdb@3.5.6:
     ordered-binary "^1.5.3"
     weak-lru-cache "^1.2.2"
   optionalDependencies:
-    "@lmdb/lmdb-darwin-arm64" "3.5.6"
-    "@lmdb/lmdb-darwin-x64" "3.5.6"
-    "@lmdb/lmdb-linux-arm" "3.5.6"
-    "@lmdb/lmdb-linux-arm64" "3.5.6"
-    "@lmdb/lmdb-linux-x64" "3.5.6"
-    "@lmdb/lmdb-win32-arm64" "3.5.6"
-    "@lmdb/lmdb-win32-x64" "3.5.6"
+    "@lmdb/lmdb-darwin-arm64" "3.5.7"
+    "@lmdb/lmdb-darwin-x64" "3.5.7"
+    "@lmdb/lmdb-linux-arm" "3.5.7"
+    "@lmdb/lmdb-linux-arm64" "3.5.7"
+    "@lmdb/lmdb-linux-x64" "3.5.7"
+    "@lmdb/lmdb-win32-arm64" "3.5.7"
+    "@lmdb/lmdb-win32-x64" "3.5.7"
 
 loader-runner@^4.2.0:
   version "4.2.0"
