@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     siteUrl,
     title: `McCorry.dev`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A personal website featuring Matthew McCorry's CV, blog, and demos.`,
     author: `@luhis`,
     "google-adsense-account": "ca-pub-9088197012476861",
   },
@@ -44,13 +44,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `McCorry.dev`,
+        short_name: `McCorry`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/profile.jpg`, // This path is relative to the root of the site.
       },
     },
     {

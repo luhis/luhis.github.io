@@ -11,16 +11,16 @@ export const Head = () => <SEO title="Matt McCorry's Blog Index" />;
 
 const Blog: React.FC<PageProps<Queries.BlogQuery>> = ({ data }) => {
   const [filter, setFilter] = useState("");
-  const lowerFiler = filter.toLocaleLowerCase();
+  const lowerFilter = filter.toLocaleLowerCase();
   const posts = data.allFile.edges.filter(({ node }) => {
     return (
-      lowerFiler.length === 0 ||
+      lowerFilter.length === 0 ||
       node.childMarkdownRemark?.frontmatter.tags
         .toLocaleLowerCase()
-        .includes(lowerFiler) ||
+        .includes(lowerFilter) ||
       node.childMarkdownRemark?.frontmatter.title
         .toLocaleLowerCase()
-        .includes(lowerFiler)
+        .includes(lowerFilter)
     );
   });
 
