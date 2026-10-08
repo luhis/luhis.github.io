@@ -1,3 +1,4 @@
+import path from "node:path";
 import type { GatsbyNode } from "gatsby";
 import { type FileSystemNode, createFilePath } from "gatsby-source-filesystem";
 
@@ -41,3 +42,15 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
     }
   `);
   };
+
+export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = ({
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        react: path.resolve(process.cwd(), "preact-compat.cjs"),
+      },
+    },
+  });
+};
