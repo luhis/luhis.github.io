@@ -49,7 +49,7 @@
     "gatsby"
   ],
   "resolutions": {
-    "lmdb": "3.5.7"
+    "lmdb": "3.5.9"
   },
   "license": "MIT",
   "scripts": {
