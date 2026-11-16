@@ -15,7 +15,7 @@ British Citizenship, Irish Citizenship, South Korean F6 Visa eligible
 
 ## PERSONAL STATEMENT
 
-Expert .NET/C# Developer with 14+ years of hands-on experience building scalable, high-performance back-end systems using Microsoft technologies. Deep expertise in C#, .NET Core (up to .NET 8), async/multithreading, RESTful APIs, microservices, and SQL Server for large datasets. 8+ years incorporating TypeScript/React in full-stack contexts, plus functional programming influences from F# personal projects. Proven track record in financial services and banking environments, including risk management, trading-related systems, and legacy refactoring to improve performance and maintainability.
+Expert .NET/C# Developer with 14+ years of hands-on experience building scalable, high-performance back-end systems using Microsoft technologies. Deep expertise in C#, .NET Core (up to .NET 10), async/multithreading, RESTful APIs, microservices, and SQL Server for large datasets. 8+ years incorporating TypeScript/React in full-stack contexts, plus functional programming influences from F# personal projects. Proven track record in financial services and banking environments, including risk management, trading-related systems, and legacy refactoring to improve performance and maintainability.
 
 ## TECHNICAL SKILLS
 
@@ -98,7 +98,7 @@ Gabriel Scientific – <https://www.gabriel.co.uk> Manchester
 **Intermediate Korean Language Course – September 2010 – November 2010**  
 Sogang University, Seoul, South Korea
 
-**BA (Hons) 1st, Computing Science with Industrial Experience – September 2004 – June 2008**  
+**BSc (Hons) 1st, Computing Science with Industrial Experience – September 2004 – June 2008**  
 University of Manchester
 
 **A-Levels, September 2002 – June 2004**  
