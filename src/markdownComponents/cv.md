@@ -50,7 +50,7 @@ Essenys – <https://www.essensys.tech> London
 Maintained and extended legacy .NET Framework office management system with new features and integrations (Stripe, GoCardless, Ezeep).
 
 **Front End Developer July 2020 – July 2021**  
-Auk Technologies – <https://www.auktechnology.com> London
+Auk Technology – <https://www.auktechnology.com> London
 
 Contributed to financial trading platforms: legacy Vue 2 inflation trading system, Angular 2 gas trading platform, and greenfield React-based cryptocurrency trading system.
 
