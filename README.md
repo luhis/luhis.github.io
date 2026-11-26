@@ -4,7 +4,7 @@ The source code for [mccorry.dev](https://mccorry.dev), a personal website featu
 
 ## Getting started
 
-Install Node.js 20 and Yarn, then run:
+Install Node.js 22 and Yarn, then run:
 
 ```sh
 yarn install --frozen-lockfile
